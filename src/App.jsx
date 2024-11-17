@@ -1,20 +1,22 @@
-// src/App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './tailwind.css';
-import './style.css';
-import Navbar from './Components/Navbar';
-import Content from './Components/Content';
+import { Route, Routes } from "react-router-dom";
+import "./App.css";
+import { Navbar } from "./Components/Navbar";
+import { Home, DonateBlood, ReceiveBlood, Groupdonation, About, Login, SignUp } from "./Components/pages"; // Import new components
 
 function App() {
   return (
-    <Router>
+    <div className="App">
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Navbar />} />
-        <Route path="/Content" element={<Content />} />
-        <Route path="/Navbar" element={<Navbar />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/donate-blood" element={<DonateBlood />} /> {/* Donate Blood route */}
+        <Route path="/receive-blood" element={<ReceiveBlood />} /> {/* Receive Blood route */}
+        <Route path="/groupdonation" element={<Groupdonation />} /> {/* Group Donation route */}
+        <Route path="/about" element={<About />} /> {/* About route */}
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
-    </Router>
+    </div>
   );
 }
 
