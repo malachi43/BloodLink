@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import './tailwind.css'
 import { Navbar } from "./Components/Navbar";
+import {Footer} from './Components/Footer';
 import { Home, Groupdonation, About } from "./Components/pages"; // Import new components
 // import {DonateBlood, ReceiveBlood, Login, SignUp} from './Components/pages'; //Pages not yet available
 
@@ -18,6 +19,7 @@ function App() {
         {/* <Route path="/login" element={<Login />} /> */}
         {/* <Route path="/signup" element={<SignUp />} /> */}
       </Routes>
+      <Footer />
     </div>
   );
 }
