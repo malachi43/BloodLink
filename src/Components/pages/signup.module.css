@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
 
 .container {
-  max-width: 70%;
+  max-width: 40%;
+  margin: 0 auto;
   font-family: "Rethink Sans", sans-serif;
+  flex: 2;
 }
 .p {
   font-family: "Rethink Sans", sans-serif;
@@ -35,16 +37,17 @@
 }
 .btn {
   background-color: #008000;
-  padding: 0.35em;
+  padding: 0.7em 4em;
   border-radius: 5px;
   color: #ffffff;
   font-family: "Rethink Sans", sans-serif;
   font-size: 0.7rem;
 }
 
-@media (max-width: 768pc){
+@media (max-width: 768px){
   .container {
-    max-width: 95%;
+    max-width: 80%;
+    margin: 0 auto;
     font-family: "Rethink Sans", sans-serif;
   }
 }
