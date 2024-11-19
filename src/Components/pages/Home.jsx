@@ -17,7 +17,7 @@ export const Home = () => {
 </div>
 
 <div className={`pt-2`}>
-                <div className={`bg-[#8B0A1A1A] lg:flex justify-evenly rounded-lg max-sm:flex max-sm:flex-col-reverse`}>
+                <div className={`bg-[#8B0A1A1A] lqqqg:flex justify-evenly rounded-lg max-sm:flex max-sm:flex-col-reverse`}>
                     <img className={`max-lg:mx-auto`} src="images/emergency.png" alt="emergency" />
 
                     <div className="place-self-center flex flex-col space-y-4">
