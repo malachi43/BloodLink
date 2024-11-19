@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif */
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  width: 50%;
+}
+.upcomingDonationHeader {
+  font-weight: 600;
+  color: #404040;
+  font-family: "Rethink Sans", sans-serif;
+}
+.upcomingText {
+  font-size: 0.8rem;
+  color: #404040;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+  .upcomingDonationHeader {
+    font-weight: 600;
+    color: #404040;
+  }
+  .upcomingText {
+    font-size: 0.8rem;
+    color: #404040;
+  }
+}
