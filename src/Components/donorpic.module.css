@@ -1,6 +1,8 @@
 .imageWrapper {
   margin: 3em 0;
   max-width: 35%;
+  flex: 1;
+  margin: 0 auto;
 }
 
 image {

@@ -20,7 +20,7 @@ function App() {
         {/* Group Donation route */}
         <Route path="/about" element={<About />} /> {/* About route */}
         {/* <Route path="/login" element={<Login />} /> */}
-        {/* <Route path="/signup" element={<SignUp />} /> */}
+        <Route path="/signup" element={<SignUp />} />
       </Routes>
       <Footer />
     </div>

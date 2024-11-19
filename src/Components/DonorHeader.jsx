@@ -16,6 +16,11 @@ export default function DonorHeader() {
           src={image_url}
           alt="doctor applying plaster to blood donor"
         />
+        <div className={styles.stats}>
+          <p className={styles.percentage}>30-50%</p>
+          <p className={styles.paragraphStat}>Returning</p>
+          <p className={styles.paragraphStat}>within a year</p>
+        </div>
       </div>
     </div>
   );
