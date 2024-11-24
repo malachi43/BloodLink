@@ -100,3 +100,20 @@
     display: none;
   }
 }
+
+@media (max-width: 768px){
+  .sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 2em;
+    margin: 1.5em;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+  }
+}
