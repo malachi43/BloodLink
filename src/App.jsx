@@ -5,8 +5,8 @@ import { Navbar } from "./Components/Navbar";
 import { Footer } from "./Components/Footer";
 import { Home, Groupdonation, About } from "./Components/pages"; // Import new components
 import DonorProfile from "./Components/pages/DonorProfile";
-// import {DonateBlood, ReceiveBlood, Login, SignUp} from './Components/pages'; //Pages not yet available
-import SignUp from "./Components/pages/Signup";
+// import { DonateBlood, ReceiveBlood, Login, SignUp } from "./Components/pages"; //Pages not yet available
+import ReceiveBlood from "./Components/pages/ReceiveBlood";
 
 function App() {
   return (
@@ -14,13 +14,15 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/donate-blood" element={<DonorProfile />} /> Donate Blood route
-        {/* <Route path="/receive-blood" element={<ReceiveBlood />} /> Receive Blood route */}
+        <Route path="/donate-blood" element={<DonorProfile />} /> Donate Blood
+        route
+        <Route path="/receive-blood" element={<ReceiveBlood />} /> Receive Blood
+        route
         <Route path="/groupdonation" element={<Groupdonation />} />{" "}
         {/* Group Donation route */}
         <Route path="/about" element={<About />} /> {/* About route */}
         {/* <Route path="/login" element={<Login />} /> */}
-        <Route path="/signup" element={<SignUp />} />
+        {/* <Route path="/signup" element={<SignUp />} /> */}
       </Routes>
       <Footer />
     </div>

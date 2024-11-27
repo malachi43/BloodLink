@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif; */
+.modifyCancelContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.modifyCancelContainer .modifyBtn {
+  width: fit-content;
+  padding: 1em 2em;
+  margin: 1em;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.modifyCancelContainer .cancelBtn {
+  width: fit-content;
+  padding: 1em 2em;
+  margin: 1em;
+  background-color: transparent;
+  color: #404040;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-family: "Rethink Sans", sans-serif;
+}

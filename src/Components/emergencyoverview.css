@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif; */
+
+.overviewContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.emergencyOverviewHeader {
+  background-color: #8b0a1a;
+  color: #ffffff;
+  font-family: "Rethink Sans", sans-serif;
+  margin-inline: 0.5em;
+  padding: 0.2em 1em;
+  border-radius: 3px;
+}
+.emergencyStat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.stat1 {
+  display: flex;
+  justify-content: space-between;
+}
+.stat1 div {
+  color: #404040;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin: 0.5em;
+  padding: 0.2em 1em;
+  width: 30%;
+}
+.stat1 p,
+.stat2 p {
+  font-family: "Rethink Sans", sans-serif;
+}
+.stat2 {
+  display: flex;
+  justify-content: space-between;
+}
+.stat2 div {
+  color: #404040;
+  background-color: #ffffff;
+  border-radius: 3px;
+  margin: 0.5em;
+  padding: 0.2em 1em;
+  width: 30%;
+}
