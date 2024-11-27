@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif */
+
+.recentUpdateContainer {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 1.5em;
+  width: 90%;
+}
+.recentUpdateHeader {
+  color: #8b0a1a;
+  font-weight: 700;
+  font-family: "Rethink Sans", sans-serif;
+  font-size: 0.7rem;
+}
+.updateRequest p:nth-child(2){
+    color: #DCDCDC;
+} 
+.updateRequest {
+  display: flex;
+  margin: 1em;
+
+}
+.updateRequest p {
+  margin-inline-end: 1em;
+  color: #ffffff;
+  font-size: 0.5rem;
+  font-family: "Rethink Sans", sans-serif;
+}
+.updateRequest p:first-child {
+  border-bottom: 1px solid #ffffff;
+  padding-block-end: 0.1em;
+}
+.updateContainer {
+  background-color: #8b0a1a;
+  border-radius: 5px;
+}
+div.searchUpdateWrapper {
+  margin: 1em;
+  border-radius: 5px;
+}
+.searchUpdateWrapper input[type="search"] {
+  color: #706f6f66;
+  width: 100%;
+  padding: 1.2em 3em;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+.updates {
+  margin: 1em;
+}
+.updates .updateData {
+  background-color: #ffffff;
+  padding: 0.5em;
+  margin-block: 0.5em;
+  border-radius: 2.5px;
+}
+
+.updates .updateData div:first-child {
+  display: flex;
+  justify-content: space-between;
+}
+
+.updates .updateData p {
+  color: #706f6f;
+  font-size: 0.5rem;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.updates .updateData div p:first-child {
+  font-weight: 700;
+  margin-block-end: 1em;
+}
