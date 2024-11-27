@@ -1,4 +1,4 @@
-import React from "react";
+import hero from "../pages/hero-img.png"; 
 
 export const Home = () => {
   return (
@@ -11,7 +11,9 @@ export const Home = () => {
          needs a blood transfusion, and your contribution is critical.</p>
          <div><button className={`bg-[#008000] hover:bg-green-600 p-3 rounded-lg font-bold`}>Donate Now</button></div>
 
-         <img src="../images/hero-img.png" alt="hero" className={`mx-auto p-2 max-[700px]:hidden`} />
+         <div className="w-[100%] h-[60vh] flex justify-center items-center bg-cover bg-center max-[700px]:hidden rounded-lg" style={{backgroundImage:`url(${hero})`}}>
+         <img src="../images/play.png" alt="play" className={`w-20 g-20 hover:cursor-pointer`} />
+         </div>
          <img src="../images/hero-img-mobile.png" alt="hero" className={`mx-auto rounded-lg hamburger min-[700px]:hidden`} />
     </div>
 </div>

@@ -7,12 +7,12 @@ export const Groupdonation = () => {
         className={`w-[100%] h-[100vh] flex justify-center items-center bg-cover bg-center `}
         style={{ backgroundImage: `url(${groupDonation})` }}
       >
-        <div className="text-center text-white space-y-4">
-          <p className="text-4xl text-whit">
+        <div className="text-center text-white space-y-4 mb-[8em]">
+          <p className="text-4xl max-md:text-2xl">
             Donate as a Team and <br />
             Save More Lives
           </p>
-          <p>
+          <p className="max-md:text-sm">
             Come together to save lives and make a greater <br />
             impact. Join our community of donors today !
           </p>
@@ -114,7 +114,7 @@ export const Groupdonation = () => {
         </div>
       </div>
 
-      <div className={`border-solid border-2 border-[#40404068] mx-20 mt-4`}>
+      <div className={`border-solid border-2 border-[#40404068] md:mx-20 mt-4 mb-6`}>
         <div className={`text-center space-y-4 p-4`}>
           <p className="text-3xl">Frequently Asked Questions </p>
           <p>We are here to answer all your questions</p>
