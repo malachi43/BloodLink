@@ -21,26 +21,26 @@ export const Navbar = () => {
       </div>
       <ul className={menuOpen ? "open" : ""}>
         <li>
-          <NavLink to="/">Home</NavLink>
+          <NavLink reloadDocument to="/">Home</NavLink>
         </li>
         <li>
-          <NavLink to="/donate-blood">Donate Blood</NavLink>
+          <NavLink reloadDocument to="/donate-blood">Donate Blood</NavLink>
         </li>
         <li>
-          <NavLink to="/receive-blood">Receive Blood</NavLink>
+          <NavLink reloadDocument to="/receive-blood">Receive Blood</NavLink>
         </li>
         <li>
-          <NavLink to="/Groupdonation">Group Donation</NavLink>
+          <NavLink reloadDocument to="/Groupdonation">Group Donation</NavLink>
         </li>
         <li>
-          <NavLink to="/About">About Us</NavLink>
+          <NavLink reloadDocument to="/About">About Us</NavLink>
         </li>
         
         <li>
-          <NavLink to="/login">Login</NavLink>
+          <NavLink reloadDocument to="/login">Login</NavLink>
         </li>
         <li>
-  <NavLink to="/signup" className="signup">Sign Up</NavLink>
+  <NavLink reloadDocument to="/signup" className="signup">Sign Up</NavLink>
 </li>
       </ul>
     </nav>

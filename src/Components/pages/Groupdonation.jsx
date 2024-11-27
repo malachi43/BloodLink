@@ -86,7 +86,7 @@ export const Groupdonation = () => {
         />
 
         <div className="text-center space-y-6">
-          <p>
+          <p className={`max-md:text-xs`}>
             "ABC Corporate partnered with Bloodlink to organize a <br />
             company-wide blood drive. Inspired by their core value of <br />
             giving back to the community, over 40 employees came <br />
@@ -99,7 +99,7 @@ export const Groupdonation = () => {
             we've done as a team,' said team leader, Mary Johnson."
           </p>
 
-          <p className={`text-2xl`}>
+          <p className={`text-2xl max-md:text-base`}>
             "Do you want your company to make a <br />
             difference like ABC Corporate? <br />
             Start your group donation drive today and <br />
