@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+/* "Rethink Sans", sans-serif; */
+
+.emergencyContainer {
+  background-color: #8b0a1a1a;
+  width: 95%;
+  margin: 2.5em auto;
+  border-radius: 5px;
+  padding: 1em 0;
+}
+
+.emergencyContainer .emergencyHeader {
+  text-align: center;
+  color: #404040;
+  font-weight: 700;
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.emergencyContainer .emergencyText {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #404040;
+  font-family: "Rethink Sans", sans-serif;
+  margin-block: 1em;
+}
