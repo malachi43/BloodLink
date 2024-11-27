@@ -101,3 +101,23 @@ nav ul li a.signup {
 nav ul li a.signup:hover {
     background-color: darkgreen;
 }
+@media (max-width: 480px) {
+    nav ul li a {
+        color: #9a1928; /*red color for the specified links in mobile view */
+    }
+
+    nav ul li a.signup {
+        background-color: green; /* Retain the green color for the Sign Up button */
+        color: white; /* Ensure contrast */
+    }
+
+    /* Optional hover effects for mobile */
+    nav ul li a:hover {
+        background-color: black; /* Slight hover background effect for links in mobile */
+    }
+
+    nav ul li a.signup:hover {
+        background-color: darkgreen;
+    }
+}
+
