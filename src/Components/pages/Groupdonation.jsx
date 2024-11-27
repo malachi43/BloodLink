@@ -1,4 +1,4 @@
-import groupDonation from "C:/Users/junio/Documents/Learning/BloodLink/public/images/group-donation.png";
+import groupDonation from "../pages/group-donation.png";
 
 export const Groupdonation = () => {
   return (
