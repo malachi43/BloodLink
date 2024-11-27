@@ -32,7 +32,7 @@ export const Home = () => {
                         possible response. Don’t wait—activate Emergency Mode to <br />
                          secure the blood you need in critical moments. Take action <br /> now!</p>
 
-                         <div><button className={`bg-[#008000] hover:bg-green-600 p-3 rounded-lg font-bold text-white`}>Activate Now</button></div>
+                         <div className="max-md:mx-auto"><button className={`bg-[#008000] hover:bg-green-600 p-3 rounded-lg font-bold text-white`}>Activate Now</button></div>
                     </div>
                 </div>
 
@@ -94,10 +94,13 @@ export const Home = () => {
                     Explore the heartfelt testimonials from ur BloodLink family.</p>
                     </div>
 
+                <div>
                 <div className={`grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 place-items-center justify-around pt-10`}>
                     <img className={`flex-shrink-0`} src="../images/moses.png" alt="moses" />
                     <img className={``} src="../images/sarah.png" alt="sarah" />
                     <img className={``} src="../images/emily.png" alt="emily" />
+                </div>
+                <img className={`pt-4 mx-auto hover:cursor-pointer`} src="../images/indicator.png" alt="indicator" />
                 </div>
 
         </div>

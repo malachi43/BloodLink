@@ -1,6 +1,6 @@
 export const Footer = () => {
     return (
-        <div className="pt-6">
+        <div className="pt-6 mt-10">
         <div className={`border-solid border-[#8B0A1A] border-2 `}>
 
             <div className={`md:grid md:grid-cols-5 pt-10 max-md:place-self-center`}>

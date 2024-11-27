@@ -7,7 +7,7 @@ export const Navbar = () => {
 
   return (
     <nav>
-      <Link to="/" className="title">
+      <Link reloadDocument to="/" className="title">
         <img 
           src="images/logo.png" 
           alt="Website Logo" 
