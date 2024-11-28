@@ -44,7 +44,7 @@ export default function RequestTracker() {
                 </div>
               </div>
               <div className="buttonWrapper">
-                <button className="cancelRequest">X Cancel Request</button>
+                <button className="cancelRequest rqb">X Cancel Request</button>
               </div>
             </div>
             <div className="requestMain">
@@ -68,7 +68,7 @@ export default function RequestTracker() {
                   <p>Pending</p>
                 </div>
               </div>
-              <button>X Cancel Request</button>
+              <button className={`rqb`}>X Cancel Request</button>
             </div>
           </div>
         </div>

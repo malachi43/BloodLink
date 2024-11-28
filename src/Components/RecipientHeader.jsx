@@ -12,7 +12,7 @@ export default function RecipientHeader() {
         </p>
         <div className="searchDonor">
           <input id="donorSearch" type="search" placeholder="Enter your location" />
-          <button>Find a Donor</button>
+          <button className={`rqb`}>Find a Donor</button>
         </div>
         <div className="summary">
           <div>

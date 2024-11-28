@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom'
+
 export const Footer = () => {
     return (
         <div className="pt-6 mt-10">
@@ -28,6 +30,7 @@ with patients in need.</p>
                     <li className={`hover:text-[#8B0A1A] hover:cursor-pointer`}>Host a Blood Drive</li>
                     <li className={`hover:text-[#8B0A1A] hover:cursor-pointer`}>Stories of Hope</li>
                     <li className={`hover:text-[#8B0A1A] hover:cursor-pointer`}>Support Us</li>
+                    <Link reloadDocument to='/About'><li className={`hover:text-[#8B0A1A] hover:cursor-pointer`}>About Us</li></Link>
                 </ul>
                 </div>
 
