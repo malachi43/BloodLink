@@ -1,48 +1,82 @@
-import React from "react";
-import "./About.css";
+// import React from "react";
+import { Bar, Pie } from "react-chartjs-2";
+import Chart from 'chart.js/auto';
+import {CategoryScale} from 'chart.js'; 
+Chart.register(CategoryScale);
 
 const ImpactDashboard = () => {
+  const barData = {
+    labels: ["2021", "2022", "2023", "2024"],
+    datasets: [
+      {
+        label: "Fulfillments",
+        data: [150, 200, 300, 400],
+        backgroundColor: "#A10A28",
+      },
+      {
+        label: "Requests",
+        data: [199, 250, 370, 450],
+        backgroundColor: "#C0575C",
+      },
+    ],
+  };
+
+
+  const barOptions = {
+    responsive: true,
+    plugins: {
+      legend: {
+        position: "top",
+      },
+    },
+  };
+
+    // Data for Pie Charts
+    const communitiesData = {
+      labels: ["Hospitals", "Community Health Centers", "Blood Banks"],
+      datasets: [
+        {
+          data: [60, 30, 10],
+          backgroundColor: ["#A10A28", "#C0575C", "#E0A3AD"],
+        },
+      ],
+    };
+  
+    const donorsData = {
+      labels: ["Repeat Donors", "First-Time Donors"],
+      datasets: [
+        {
+          data: [70, 30],
+          backgroundColor: ["#A10A28", "#C0575C"],
+        },
+      ],
+    };
+
+
   return (
-    <div className="about-container">
-      <div className="image-container">
-        <img src="../images/About.png" alt="About" className="image" />
-        <h1 className="image-text">ABOUT US</h1>
-      </div>
-      <div className="additional-text">
-        <p>
-          At Blood Link, our mission is to create a life-saving connection between blood donors and those in need. We are a platform dedicated to facilitating safe, quick, and efficient blood donations, making it easier for people to volunteer as donors and for patients to request life-saving blood when they need it most.
-        </p>
-      </div>
-      {/*another image container with similar styling */}
-      <div className="image-container">
-        <img src="../images/About us.png" alt="Additional Info" className="image" />
-      </div>
-        {/*  Vision, Mission, and Core Values */}
-        <div className="values-section">
-        <div className="value-item">
-          <h2>Vision</h2>
-          <p>
-            To build a world where every person in need of blood receives it promptly and safely, fostering a global community of donors committed to saving lives and empowering healthcare systems through reliable blood accessibility.
-          </p>
-        </div>
-        <div className="value-item">
-          <h2>Mission</h2>
-          <p>
-            Our mission at Blood Link is to connect willing blood donors with those in urgent need, providing a seamless platform that makes the donation and request process safe, efficient, and accessible to all.
-          </p>
-        </div>
-        <div className="value-item">
-          <h2>Core Values</h2>
-          <p>
-            <strong>Compassion:</strong> We are driven by empathy and a deep commitment to saving lives.
-          </p>
-          <p>
-            <strong>Accessibility:</strong> We believe in making blood donation and access to blood simple and inclusive, ensuring everyone can connect and contribute to this life-saving mission.
-          </p>
-        </div>
-      </div>
+    <div style={{ fontFamily: "Arial, sans-serif", padding: "20px", backgroundColor: "#f4f4f4" }}>
+    <h2 style={{ textAlign: "center", marginBottom: "20px" }}>IMPACT DASHBOARD</h2>
+
+    {/* Bar Chart */}
+    <div style={{ marginBottom: "40px" }}>
+      <h3>Yearly Progress of Blood Requests: Increasing Fulfillments and Growing Demand</h3>
+      <Bar data={barData} options={barOptions} />
     </div>
-  );
-}
+
+    {/* Communities Supported */}
+    <div style={{ marginBottom: "40px" }}>
+      <h3>Communities Supported</h3>
+      <Pie data={communitiesData} />
+    </div>
+
+    {/* Donors Chart */}
+    <div>
+      <h3>Percentage of First-Time Donors vs. Repeat Donors</h3>
+      <Pie data={donorsData} />
+    </div>
+  </div>
+);
+};
+
 
 export default ImpactDashboard;
