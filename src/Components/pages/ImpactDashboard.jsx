@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 
-export const ImpactDashboard = () => {
+const ImpactDashboard = () => {
   return (
     <div className="about-container">
       <div className="image-container">
@@ -43,4 +43,6 @@ export const ImpactDashboard = () => {
       </div>
     </div>
   );
-};
+}
+
+export default ImpactDashboard;
