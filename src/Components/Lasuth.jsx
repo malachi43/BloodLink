@@ -8,7 +8,7 @@ export default function Lasuth() {
         <p>LASUTH</p>
         <p id="clinic">Clinic</p>
       </div>
-      <div>
+      <div className="generalInfoContainer">
         <p className="generalInfo">General Information</p>
         <div className="infoMain">
           <div className="data">

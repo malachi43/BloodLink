@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   margin-block-start: 1.5em;
-  width: 90%;
 }
 .recentUpdateHeader {
   color: #8b0a1a;
@@ -14,13 +13,12 @@
   font-family: "Rethink Sans", sans-serif;
   font-size: 0.7rem;
 }
-.updateRequest p:nth-child(2){
-    color: #DCDCDC;
-} 
+.updateRequest p:nth-child(2) {
+  color: #dcdcdc;
+}
 .updateRequest {
   display: flex;
   margin: 1em;
-
 }
 .updateRequest p {
   margin-inline-end: 1em;
@@ -35,6 +33,7 @@
 .updateContainer {
   background-color: #8b0a1a;
   border-radius: 5px;
+  width: 90%;
 }
 div.searchUpdateWrapper {
   margin: 1em;
@@ -43,12 +42,14 @@ div.searchUpdateWrapper {
 .searchUpdateWrapper input[type="search"] {
   color: #706f6f66;
   width: 100%;
-  padding: 1.2em 3em;
+  padding: 0.5em 3em;
   border-radius: 5px;
   font-size: 0.7rem;
 }
 .updates {
   margin: 1em;
+  height: 17.5rem;
+  overflow-y: scroll;
 }
 .updates .updateData {
   background-color: #ffffff;
@@ -71,4 +72,30 @@ div.searchUpdateWrapper {
 .updates .updateData div p:first-child {
   font-weight: 700;
   margin-block-end: 1em;
+}
+
+@media (max-width: 768px) {
+  .updateContainer {
+    width: 100%;
+    padding: 0;
+  }
+  div.searchUpdateWrapper {
+    margin: 0.3em;
+  }
+  .searchUpdateWrapper input[type="search"] {
+    padding: 0.5em 3em;
+    border-radius: 3px;
+    font-size: 0.5rem;
+  }
+  .updates .updateData {
+    background-color: #ffffff;
+    padding: 0.3em;
+    margin-block: 0.3em;
+    border-radius: 2.5px;
+  }
+  .updates {
+    margin: 0.3em;
+    height: 25rem;
+    overflow-y: scroll;
+  }
 }

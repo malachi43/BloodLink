@@ -11,8 +11,8 @@
   align-items: center;
 }
 .stat {
-  width: fit-content;
-  /* margin: 1em; */
+  width: 30%;
+  text-wrap: wrap;
   text-align: center;
   background-color: #008000;
   color: #ffffff;
@@ -28,4 +28,31 @@
   font-family: "Rethink Sans", sans-serif;
   font-weight: 500;
   font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .donorStat {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    font-size: 0.3rem;
+    text-wrap: wrap;
+    border-radius: 3px;
+  }
+  .statText {
+    font-size: 0.3rem;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+  }
+  .statNum {
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 500;
+    font-size: 0.5rem;
+  }
 }

@@ -10,6 +10,7 @@ import RecentUpdate from "../RecentUpdate";
 import Row from "../Row";
 import ColumnOne from "../ColumnOne";
 import ColumnTwo from "../ColumnTwo"
+import DonorOnTheirWay from "../DonorOnTheirWay";
 
 
 export default function ReceiveBlood() {

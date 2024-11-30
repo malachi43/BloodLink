@@ -1,7 +1,9 @@
 import EmergencyOverview from "./EmergencyOverview";
 import ModifyCancelRequest from "./ModifyCancelRequest";
 import RequestDetails from "./RequestDetails";
+import DonorOnTheirWay from "./DonorOnTheirWay";
 import "./emergencymode.css";
+import styled from "styled-components";
 
 export default function EmergencyMode() {
   return (
@@ -12,9 +14,30 @@ export default function EmergencyMode() {
         situations. This will prioritize your request and reach out to available
         donors."
       </p>
-      <EmergencyOverview />
-      <RequestDetails />
+      <Container>
+        <Col>
+          <EmergencyOverview />
+          <RequestDetails />
+        </Col>
+        <Col>
+          <DonorOnTheirWay />
+        </Col>
+      </Container>
+
       <ModifyCancelRequest />
     </div>
   );
 }
+
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  & > div {
+    width: 45%;
+  }
+`;
+
+const Col = styled.div`
+  display: flex;
+  flex-direction: column;
+`;

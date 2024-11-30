@@ -12,6 +12,13 @@
   border-radius: 5px;
 }
 
+.generalInfoContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .lasuth > div:first-child p {
   text-align: center;
   color: #ffffff;
@@ -44,6 +51,7 @@
 .generalInfo {
   margin-block: 1em;
   font-size: 0.5em;
+  align-self: flex-start;
 }
 .lasuthName #clinic {
   color: rgba(255, 255, 255, 0.7);
@@ -63,6 +71,16 @@
   max-width: 100%;
 }
 
-@media (max-width: 768px){
-
+@media (max-width: 768px) {
+  .lasuth {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #8b0a1a;
+    padding: 0.5em;
+    width: 100%;
+    border-radius: 5px;
+  }
+  .generalInfo {
+  }
 }
