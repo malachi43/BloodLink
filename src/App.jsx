@@ -7,6 +7,7 @@ import { Home, Groupdonation, About } from "./Components/pages"; // Import new c
 import DonorProfile from "./Components/pages/DonorProfile";
 // import { DonateBlood, ReceiveBlood, Login, SignUp } from "./Components/pages"; //Pages not yet available
 import ReceiveBlood from "./Components/pages/ReceiveBlood";
+import ImpactDashboard from "./Components/pages/ImpactDashboard";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/receive-blood" element={<ReceiveBlood />} /> Receive Blood
         route
         <Route path="/groupdonation" element={<Groupdonation />} />{" "}
+        <Route path="/ImpactDashboard" element={<ImpactDashboard />} />{" "}
         {/* Group Donation route */}
         <Route path="/about" element={<About />} /> {/* About route */}
         {/* <Route path="/login" element={<Login />} /> */}

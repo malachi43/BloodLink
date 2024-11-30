@@ -33,7 +33,7 @@ export const Navbar = () => {
           <NavLink reloadDocument to="/Groupdonation">Group Donation</NavLink>
         </li>
         <li>
-          <NavLink reloadDocument to="/About">About Us</NavLink>
+          <NavLink reloadDocument to="/ImpactDashboard">ImpactDashboard</NavLink>
         </li>
         
         <li>
