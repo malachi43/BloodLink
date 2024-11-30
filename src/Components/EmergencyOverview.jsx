@@ -5,7 +5,7 @@ export default function EmergencyOverview() {
     <div className="overviewContainer">
       <div className="emergencyOverviewHeader">Emergency</div>
       <div className="emergencyStat">
-        <div className="stat1">
+        <div className="stat">
           <div>
             <p>10+</p>
             <p>Donor Notified</p>
@@ -15,7 +15,7 @@ export default function EmergencyOverview() {
             <p>Responded</p>
           </div>
         </div>
-        <div className="stat2">
+        <div className="stat">
           <div>
             <p>5</p>
             <p>Confirmed</p>
