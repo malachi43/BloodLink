@@ -10,15 +10,17 @@
 div.requestDetailContainer div p {
   color: #404040;
   background-color: #ffffff;
-  border-radius: 3px;
+  border-radius: 5px;
   margin: 0;
   margin: 0.09em;
   padding: 0.2em 1em;
   border-radius: 5px;
   font-family: "Rethink Sans", sans-serif;
+  font-size: 0.5em;
 }
 
 .requestDetailContainer .requestDetailHeader p {
   background-color: #8B0A1A;
   color: #FFFFFF;
+  padding: 0.5em 1em;
 }

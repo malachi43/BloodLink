@@ -2,7 +2,7 @@ import "./donationrequesthistory.css";
 
 export default function DonationRequestHistory() {
   return (
-    <div className="container">
+    <div className="donationContainer">
       <div className="requestHistory">
         <p>Donation Request History</p>
         <div className="requestStats">

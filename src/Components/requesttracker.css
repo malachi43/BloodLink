@@ -5,11 +5,11 @@
 .container {
   width: 100%;
   border-radius: 5px;
-  /* justify-content: end; */
-  /* align-items: center; */
 }
 .main {
   background-color: #8b0a1a;
+  display: flex;
+  flex-direction: column;
 }
 .heading {
   color: #8b0a1a;
@@ -67,6 +67,7 @@
 }
 .requestIdContainer {
   display: flex;
+  flex-wrap: wrap;
 }
 .requestBody {
   display: flex;
