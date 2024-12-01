@@ -105,6 +105,7 @@ const TableWrapper = styled.div`
   flex-direction: column;
   background-color: #ffffff;
   padding-block-end: 1em;
+  flex: 1;
 `;
 const Table = styled.table`
   width: 100%;
@@ -184,9 +185,12 @@ const Col = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0.2em;
-  width: 45%;
+  width: 1;
   margin-block: 0.5em;
   margin-inline-end: 0.5em;
+  &:nth-child(2) {
+    flex: 1;
+  }
 `;
 
 const Summary = styled.div`
