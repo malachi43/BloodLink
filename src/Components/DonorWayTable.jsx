@@ -1,4 +1,5 @@
 import styled from "styled-components";
+const stopwatch = "../../public/images/stopwatch.png";
 
 export default function DonorOnTheirWay() {
   return (
@@ -85,6 +86,10 @@ export default function DonorOnTheirWay() {
               </NoSuccess>
             </Summary>
           </Info>
+          <EmergencyText>Emergency mode expires In</EmergencyText>
+          <StopWatchWrapper>
+            <Stopwatch src={stopwatch} alt="stopwatch" />
+          </StopWatchWrapper>
         </Col>
       </OtherInfoContainer>
     </Contanier>
@@ -223,3 +228,22 @@ const Success = styled.div`
   }
 `;
 const NoSuccess = styled(Success)``;
+
+const EmergencyText = styled.p`
+  color: #404040;
+  font-size: 0.5rem;
+  text-align: center;
+`;
+
+const Stopwatch = styled.img`
+  max-width: 100%;
+  object-fit: cover;
+`;
+
+const StopWatchWrapper = styled.div`
+  width: 50px;
+  height: 50px;
+  margin: auto;
+`;
+
+
