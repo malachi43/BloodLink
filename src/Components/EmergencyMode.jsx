@@ -18,13 +18,12 @@ export default function EmergencyMode() {
         <Col>
           <EmergencyOverview />
           <RequestDetails />
+          <ModifyCancelRequest />
         </Col>
         <Col>
           <DonorOnTheirWay />
         </Col>
       </Container>
-
-      <ModifyCancelRequest />
     </div>
   );
 }
@@ -34,6 +33,12 @@ const Container = styled.div`
   justify-content: space-between;
   & > div {
     width: 45%;
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

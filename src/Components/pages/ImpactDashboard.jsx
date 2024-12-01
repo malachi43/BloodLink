@@ -1,82 +1,138 @@
-// import React from "react";
-import { Bar, Pie } from "react-chartjs-2";
-import Chart from 'chart.js/auto';
-import {CategoryScale} from 'chart.js'; 
-Chart.register(CategoryScale);
+import React from "react";
+import { Bar, Pie, Doughnut } from "react-chartjs-2"; // Import Bar, Pie, and Doughnut components for charts
+import Chart from "chart.js/auto"; // Chart.js for creating charts
+import { CategoryScale } from "chart.js"; // Import CategoryScale for scaling purposes
+Chart.register(CategoryScale); // Register CategoryScale to enable its functionality
 
 const ImpactDashboard = () => {
+  // Data for the bar chart (Yearly progress of blood requests)
   const barData = {
-    labels: ["2021", "2022", "2023", "2024"],
+    labels: ["2021", "2022", "2023", "2024"], // X-axis labels (Years)
     datasets: [
       {
-        label: "Fulfillments",
-        data: [150, 200, 300, 400],
-        backgroundColor: "#A10A28",
+        label: "Fulfilled Request", // Label for the first dataset
+        data: [160, 250, 350, 400], // Data points for each year
+        backgroundColor: "#800000", // Color of the bars for fulfilled requests
       },
       {
-        label: "Requests",
-        data: [199, 250, 370, 450],
-        backgroundColor: "#C0575C",
+        label: "Cancelled Request", // Label for the second dataset
+        data: [200, 260, 200, 100], // Data points for each year
+        backgroundColor: "#F5B7B1", // Color of the bars for canceled requests
       },
     ],
   };
 
-
+  // Configuration options for the bar chart
   const barOptions = {
-    responsive: true,
+    responsive: true, // Chart adjusts to the container's size
+    maintainAspectRatio: false, // Prevents chart distortion
     plugins: {
       legend: {
-        position: "top",
+        position: "top", // Position of the legend
+      },
+    },
+    scales: {
+      x: {
+        title: {
+          display: true, // Display title for the x-axis
+          text: "Year", // Title text for the x-axis
+        },
+      },
+      y: {
+        beginAtZero: true, // Ensure the y-axis starts from zero
+        title: {
+          display: true, // Display title for the y-axis
+          text: "Blood Requests", // Title text for the y-axis
+        },
       },
     },
   };
 
-    // Data for Pie Charts
-    const communitiesData = {
-      labels: ["Hospitals", "Community Health Centers", "Blood Banks"],
-      datasets: [
-        {
-          data: [60, 30, 10],
-          backgroundColor: ["#A10A28", "#C0575C", "#E0A3AD"],
-        },
-      ],
-    };
-  
-    const donorsData = {
-      labels: ["Repeat Donors", "First-Time Donors"],
-      datasets: [
-        {
-          data: [70, 30],
-          backgroundColor: ["#A10A28", "#C0575C"],
-        },
-      ],
-    };
+  // Data for the Doughnut chart (Communities supported)
+  const communitiesData = {
+    labels: ["Hospitals", "Community Health Centers", "Blood Banks"], // Categories
+    datasets: [
+      {
+        data: [35, 30, 35], // Data for each category
+        backgroundColor: ["#800000", "#F5B7B1", "#E0A3AD"], // Colors for the doughnut segments
+      },
+    ],
+  };
 
+  // Data for the Pie chart (Donor distribution)
+  const donorsData = {
+    labels: ["Repeat Donors", "First-Time Donors"], // Donor types
+    datasets: [
+      {
+        data: [30, 70], // Data for each donor type
+        backgroundColor: ["#F5B7B1", "#800000"], // Colors for the pie segments
+      },
+    ],
+  };
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", padding: "20px", backgroundColor: "#f4f4f4" }}>
-    <h2 style={{ textAlign: "center", marginBottom: "20px" }}>IMPACT DASHBOARD</h2>
+    <div style={styles.container}>
+      {/* Bar Chart Section */}
+      <div style={styles.chartContainer}>
+        <h3 style={styles.chartTitle}>
+          Yearly Progress of Blood Requests: Increasing Fulfillments and Growing Demand
+        </h3>
+        <div style={styles.chart}>
+          <Bar data={barData} options={barOptions} /> {/* Render the Bar chart */}
+        </div>
+      </div>
 
-    {/* Bar Chart */}
-    <div style={{ marginBottom: "40px" }}>
-      <h3>Yearly Progress of Blood Requests: Increasing Fulfillments and Growing Demand</h3>
-      <Bar data={barData} options={barOptions} />
-    </div>
+      {/* Doughnut Chart Section (Communities Supported) */}
+      <div style={styles.chartContainer}>
+        <h3 style={styles.chartTitle}>Communities Supported</h3>
+        <div style={styles.chart}>
+          <Doughnut
+            data={communitiesData} // Pass data for the Doughnut chart
+            options={{ maintainAspectRatio: false }} // Prevent distortion
+          />
+        </div>
+      </div>
 
-    {/* Communities Supported */}
-    <div style={{ marginBottom: "40px" }}>
-      <h3>Communities Supported</h3>
-      <Pie data={communitiesData} />
+      {/* Pie Chart Section (Donors Distribution) */}
+      <div style={styles.chartContainer}>
+        <h3 style={styles.chartTitle}>Percentage of First-Time Donors vs. Repeat Donors</h3>
+        <div style={styles.chart}>
+          <Pie
+            data={donorsData} // Pass data for the Pie chart
+            options={{ maintainAspectRatio: false }} // Prevent distortion
+          />
+        </div>
+      </div>
     </div>
-
-    {/* Donors Chart */}
-    <div>
-      <h3>Percentage of First-Time Donors vs. Repeat Donors</h3>
-      <Pie data={donorsData} />
-    </div>
-  </div>
-);
+  );
 };
 
+// Inline styles for the component
+const styles = {
+  container: {
+    fontFamily: "Arial, sans-serif", // Font family for the entire dashboard
+    padding: "20px", // Padding around the dashboard
+    backgroundColor: "#f4f4f4", // Light gray background color
+  },
+  title: {
+    textAlign: "center", // Center-align the title text
+    marginBottom: "20px", // Space below the title
+  },
+  chartContainer: {
+    marginBottom: "40px", // Space below each chart section
+    display: "flex", // Use flexbox for layout
+    flexDirection: "column", // Arrange items vertically
+    alignItems: "center", // Center-align items
+  },
+  chartTitle: {
+    textAlign: "center", // Center-align the chart titles
+    marginBottom: "10px", // Space below the chart title
+  },
+  chart: {
+    width: "100%", // Full width for responsive design
+    maxWidth: "600px", // Maximum width for the chart
+    height: "400px", // Fixed height for the chart container
+  },
+};
 
 export default ImpactDashboard;
