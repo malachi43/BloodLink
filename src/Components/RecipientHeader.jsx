@@ -1,5 +1,5 @@
 import "./recipientheader.css";
-const imgUrl = "../public/images/doctor_blood_canister.png";
+const imgUrl = "../images/doctor_blood_canister.png";
 
 export default function RecipientHeader() {
   return (

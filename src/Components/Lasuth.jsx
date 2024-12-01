@@ -1,5 +1,5 @@
 import "./lasuth.css";
-const imgUrl = "../../public/images/lasuth.png";
+const imgUrl = "../../images/lasuth.png";
 
 export default function Lasuth() {
   return (
