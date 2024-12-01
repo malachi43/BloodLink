@@ -16,6 +16,7 @@
   padding: 0.5em 1em;
   border-radius: 3px;
   font-size: 0.5em;
+  font-size: 0.7em;
 }
 .emergencyStat {
   display: flex;
@@ -37,7 +38,7 @@
 .stat p,
 .stat p {
   font-family: "Rethink Sans", sans-serif;
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 .stat {
   display: flex;
@@ -55,5 +56,8 @@
 @media (max-width: 768px) {
   .stat div {
     width: 45%;
+  }
+  .stat div {
+    background-color: #F3E7E8;
   }
 }

@@ -90,6 +90,7 @@ export default function DonorOnTheirWay() {
           <StopWatchWrapper>
             <Stopwatch src={stopwatch} alt="stopwatch" />
           </StopWatchWrapper>
+          <Time>4hrs35mins</Time>
         </Col>
       </OtherInfoContainer>
     </Contanier>
@@ -121,6 +122,7 @@ const Table = styled.table`
     text-align: start;
     padding: 0.5em;
     border: none;
+    font-size: 0.7rem;
   }
   tr {
     border: none;
@@ -131,7 +133,7 @@ const Table = styled.table`
     background-color: #8b0a1a;
     padding: 0.5em;
     border: none;
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   th:first-child {
     border-top-left-radius: 5px;
@@ -164,6 +166,14 @@ const Socials = styled.div`
 
 const OtherInfoContainer = styled.div`
   display: flex;
+  P {
+    font-size: 0.7rem;
+  }
+  @media (max-width: 768px) {
+    & {
+      flex-direction: column;
+    }
+  }
 `;
 const Info = styled.div`
   display: flex;
@@ -178,10 +188,12 @@ const Info = styled.div`
     font-weight: 700;
     margin-block-end: 0.5em;
   }
-
-  @media (max-width: 768px) {
+    @media (max-width: 768px) {
     & p {
-      font-size: 0.4em;
+      background-color: #F3E7E8;
+      padding: 1em;
+      width: 100%;
+      border-radius: 5px;
     }
   }
 `;
@@ -241,7 +253,14 @@ const Stopwatch = styled.img`
 `;
 
 const StopWatchWrapper = styled.div`
-  width: 50px;
-  height: 50px;
-  margin: auto;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+`;
+
+const Time = styled.p`
+  text-align: center;
+  color: #404040;
+  font-size: 0.5em;
+  margin-block: 1em;
 `;
