@@ -1,5 +1,5 @@
 import styled from "styled-components";
-const stopwatch = "../../public/images/stopwatch.png";
+const stopwatch = "../../images/stopwatch.png";
 
 export default function DonorOnTheirWay() {
   return (
@@ -245,5 +245,3 @@ const StopWatchWrapper = styled.div`
   height: 50px;
   margin: auto;
 `;
-
-

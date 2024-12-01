@@ -1,5 +1,5 @@
 import styles from "./donorpic.module.css";
-const image_url = "../../public/images/donor_pic.png";
+const image_url = "../../images/donor_pic.png";
 
 export default function DonorPic() {
   return (
