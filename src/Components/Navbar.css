@@ -1,5 +1,5 @@
 .active{
-    background-color: #722F37;
+    background-color: #D3D3D3;
 }
 
 nav {
@@ -39,7 +39,7 @@ nav ul li a {
 }
 
 nav ul li a:not(.active):hover {
-    background-color: #722F37 ;
+    background-color: #D3D3D3 ;
 }
 
 nav .menu {
