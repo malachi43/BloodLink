@@ -9,16 +9,35 @@
 .modifyCancelContainer .modifyBtn {
   width: fit-content;
   padding: 1em 2em;
-  margin: 1em;
+  margin-inline-start: 0.5em;
+  margin-block-start: 3em;
   font-family: "Rethink Sans", sans-serif;
+  background-color: #008000;
+  font-size: 0.7em;
+  border-radius: 5px;
+  color: #ffffff;
 }
 
 .modifyCancelContainer .cancelBtn {
   width: fit-content;
   padding: 1em 2em;
-  margin: 1em;
+  margin: 0.2em 0.5em;
+  font-size: 0.7em;
   background-color: transparent;
   color: #404040;
   border: 1px solid rgba(0, 0, 0, 0.2);
   font-family: "Rethink Sans", sans-serif;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .modifyCancelContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .modifyCancelContainer .modifyBtn, .modifyCancelContainer .cancelBtn{
+    width: 90%;
+  }
 }
