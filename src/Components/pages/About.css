@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center; /* Centers the content */
-  text-align: center; /* Ensures centered text alignment */
+  text-align: left; /* Ensures centered text alignment */
   padding: 20px;
   background-color: #f5f5f5; /*Set a background color for contrast */
 }
@@ -111,7 +111,7 @@
 .value-item {
   flex: 1;
   margin: 0 15px;
-  text-align: center;
+  text-align: left;
 }
 
 .value-item h2 {
@@ -148,5 +148,11 @@
     border-right: none;
     padding: 0; /*  Adjust padding for smaller screens */
   }
+  .image-text {
+      font-size: calc(4vw + 10px); /* Adjust font size for very small screens */
+      white-space: nowrap; /* Keeps the text on a single line */
+      text-align: center;
+    }
+  
 }
 
