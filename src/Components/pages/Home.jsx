@@ -9,7 +9,7 @@ export const Home = () => {
         <p className={`md:place-self-end max-sm:text-xs`}>By donating blood, you can save up to three lives with just <br /> 
         one donation. Every two seconds, someone in the world <br />
          needs a blood transfusion, and your contribution is critical.</p>
-         <div><button className={`bg-[#008000] hover:bg-green-600 p-3 rounded-lg font-bold`}>Donate Now</button></div>
+         <div><button className={`bg-[#008000] hover:bg-green-600 p-3 rounded-lg font-bold place-items-start pl-6 pr-6`}>Donate Now</button></div>
 
          {/* <div className="w-[100%] h-[60vh] flex justify-center items-center bg-cover bg-center max-[700px]:hidden rounded-lg" style={{backgroundImage:`url(${hero})`}}>
          <img src="../images/play.png" alt="play" className={`w-20 g-20 hover:cursor-pointer`} />
@@ -33,7 +33,7 @@ export const Home = () => {
                         possible response. Don’t wait—activate Emergency Mode to <br />
                          secure the blood you need in critical moments. Take action <br /> now!</p>
 
-                         <div className="max-md:mx-auto"><button className={`bg-[#008000] hover:bg-green-600 p-3 rounded-lg font-bold text-white`}>Activate Now</button></div>
+                         <div className=""><button className={`bg-[#008000] hover:bg-green-600 p-3 rounded-lg font-bold text-white pl-6 pr-6`}>Activate Now</button></div>
                     </div>
                 </div>
 

@@ -53,6 +53,7 @@
 }
 .btnPending {
   align-self: flex-start;
+  margin-block-start: 1.5em;
 }
 
 @media (max-width: 768px){
