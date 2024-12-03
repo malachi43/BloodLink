@@ -16,22 +16,9 @@ export default function ReceiveBlood() {
   return (
     <div className="receiveBloodContainer">
       <RecipientHeader />
-      <RecipientRequestMain/>
-      <RequestForBlood/>
-      <EmergencyMode/>
-      {/* <Row>
-        <ColumnOne>
-          <Lasuth />
-          <RecentUpdate />
-        </ColumnOne>
-        <ColumnTwo>
-          <DonorStat />
-          <RequestTracker />
-          <DonationRequestHistory />
-        </ColumnTwo>
-      </Row>
+      <RecipientRequestMain />
       <RequestForBlood />
-      <EmergencyMode /> */}
+      <EmergencyMode />
     </div>
   );
 }
