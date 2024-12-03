@@ -1,4 +1,4 @@
-import hero from "../pages/hero-img.png"; 
+// import hero from "../pages/hero-img.png"; 
 
 export const Home = () => {
   return (
@@ -44,7 +44,7 @@ export const Home = () => {
                     <p className={`text-[#706F6F] pt-4`}>Join a network built for immediate, local blood <br /> connections</p>
                 </div>
 
-                <div className={`pt-10 md:flex max-md:space-y-4 justify-around items-center text-center`}>
+                <div className={`pt-10 mx-164 md:flex max-md:space-y-4 justify-around items-center text-center`}>
                     <div className={`space-y-2`}>
                         <img className={`mx-auto`} src="../images/instant.png" alt="instant" />
                         <p className={`text-xl`}>Instant Matching</p>
@@ -71,7 +71,7 @@ export const Home = () => {
                      match you with the right people and ensures all information is secure.</p>
                     </div>
 
-                    <div className={`absolute grid grid-cols-7 md:pl-8 pt-10 max-[801px]:hidden`}>
+                    <div className={`absolute grid grid-cols-7 md:pl-8 pt-10 max-[801px]:hidden mx-[120px]`}>
                         <img src="../images/card1.png" alt="sign up" />
                         <img className={`mx-auto`} src="images/arrow.png" alt="arrow" />
                         <img src="../images/card2.png" alt="verify" />
@@ -96,8 +96,8 @@ export const Home = () => {
                     </div>
 
                 <div>
-                <div className={`grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 place-items-center justify-around pt-10`}>
-                    <img className={`flex-shrink-0`} src="../images/moses.png" alt="moses" />
+                <div className={`grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 place-items-center pt-10 mx-16`}>
+                    <img className={``} src="../images/moses.png" alt="moses" />
                     <img className={``} src="../images/sarah.png" alt="sarah" />
                     <img className={``} src="../images/emily.png" alt="emily" />
                 </div>
