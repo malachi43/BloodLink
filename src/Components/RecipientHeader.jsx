@@ -43,6 +43,13 @@ const Header = styled.div`
   margin: 2em;
   gap: 40px;
   grid-gap: 40px;
+
+  @media (max-width: 768px) {
+    & {
+      display: flex;
+      flex-direction: column;
+    }
+  }
 `;
 
 const HeaderTextContainer = styled.div`
@@ -101,6 +108,12 @@ const HeaderTextContainer = styled.div`
         }
       }
     }
+  }
+
+  @media (max-width:768px){
+  & {
+   
+  }
   }
 `;
 
