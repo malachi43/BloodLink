@@ -11,21 +11,15 @@ export default function DonorOnTheirWay() {
 }
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
 
-  @media (max-width: 768px) {
-    & {
-      display: none;
-    }
-  }
+  
 `;
 const Title = styled.p`
-  color: #ffffff;
-  background-color: green;
+  padding: 0.5em 1em;
+  color: #FFFFFF;
+  background-color: #008000;
+  text-align: start;
   border-radius: 5px;
-  padding: 0.5em;
-  font-size: 0.7em;
-  margin-inline: 1.5em;
 `;
