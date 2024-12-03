@@ -1,15 +1,15 @@
-import "./donationrequesthistory.css";
-
+// import "./donationrequesthistory.css";
+import styled from "styled-components";
 export default function DonationRequestHistory() {
   return (
-    <div className="donationContainer">
-      <div className="requestHistory">
+    <Container class="donation-container">
+      <div class="request-history">
         <p>Donation Request History</p>
-        <div className="requestStats">
-          <div className="searchWrapper">
+        <div class="request-stats">
+          <div class="search-wrapper">
             <input type="search" placeholder="Search by Request ID" />
           </div>
-          <div className="tableWrapper">
+          <div class="table-wrapper">
             <table>
               <thead>
                 <tr>
@@ -106,6 +106,59 @@ export default function DonationRequestHistory() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  width: 100%;
+  margin-block: 2em;
+  font-size: 0.7em;
+
+  .request-stats {
+    background-color: #8b0a1a;
+    padding: 1em;
+    border-radius: 5px;
+  }
+
+  .request-history p:first-child {
+    margin-block: 1em;
+    color: #8b0a1a;
+    font-weight: 700;
+  }
+
+  .search-wrapper {
+    margin-block: 1em;
+    border-radius: 5px;
+  }
+
+  .search-wrapper input {
+    width: 100%;
+    padding: 1em 3em;
+    border-radius: 5px;
+  }
+
+  .table-wrapper {
+    width: 100%;
+  }
+  .table-wrapper table {
+    width: 100%;
+    border: 1px solid white;
+  }
+
+  tr,
+  th,
+  td {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    color: #ffffff;
+  }
+  td,
+  th {
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  thead {
+    background-color: green;
+  }
+`;

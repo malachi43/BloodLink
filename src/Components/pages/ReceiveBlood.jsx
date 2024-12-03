@@ -9,15 +9,17 @@ import Lasuth from "../Lasuth";
 import RecentUpdate from "../RecentUpdate";
 import Row from "../Row";
 import ColumnOne from "../ColumnOne";
-import ColumnTwo from "../ColumnTwo"
-import DonorOnTheirWay from "../DonorOnTheirWay";
-
+import ColumnTwo from "../ColumnTwo";
+import RecipientRequestMain from "../RecipientRequestMain";
 
 export default function ReceiveBlood() {
   return (
     <div className="receiveBloodContainer">
       <RecipientHeader />
-      <Row>
+      <RecipientRequestMain/>
+      <RequestForBlood/>
+      <EmergencyMode/>
+      {/* <Row>
         <ColumnOne>
           <Lasuth />
           <RecentUpdate />
@@ -29,7 +31,7 @@ export default function ReceiveBlood() {
         </ColumnTwo>
       </Row>
       <RequestForBlood />
-      <EmergencyMode />
+      <EmergencyMode /> */}
     </div>
   );
 }

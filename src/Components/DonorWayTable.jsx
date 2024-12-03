@@ -98,20 +98,20 @@ export default function DonorOnTheirWay() {
 }
 
 const Contanier = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  margin: 1em;
-  margin-block-start: 0.5em;
+  margin-block-start: 1em;
+  display: grid;
+  grid-template-columns: 1fr;
   background-color: transparent;
 `;
 
 const TableWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  // flex-direction: column;
   background-color: #ffffff;
-  padding-block-end: 1em;
-  flex: 1;
+  // padding-block-end: 1em;
+  // flex: 1;
 `;
 const Table = styled.table`
   width: 100%;
@@ -165,32 +165,45 @@ const Socials = styled.div`
 `;
 
 const OtherInfoContainer = styled.div`
-  display: flex;
+  // display: flex;
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  gap: 20px;
   P {
     font-size: 0.7rem;
   }
   @media (max-width: 768px) {
     & {
+      display: grid;
+      grid-template-columns: 1fr;
       flex-direction: column;
     }
   }
 `;
 const Info = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0.5em;
-  font-size: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: flex-start;
+  padding: 0.5em 1em;
+  p {
+    text-align: center;
+  }
+  font-size: 0.7em;
   background-color: #ffffff;
   border-radius: 3px;
   & p:first-child {
     font-weight: 700;
-    margin-block-end: 0.5em;
+    text-align: start;
   }
-    @media (max-width: 768px) {
+  & p {
+    text-align: start;
+  }
+  @media (max-width: 768px) {
     & p {
-      background-color: #F3E7E8;
+      background-color: #f3e7e8;
       padding: 1em;
       width: 100%;
       border-radius: 5px;
