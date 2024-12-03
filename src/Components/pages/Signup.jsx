@@ -1,7 +1,7 @@
 import styles from "./signup.module.css";
 import { Link } from "react-router-dom";
 
-export default function SignUp() {
+export default function Signup() {
   return (
     <div className={styles.container}>
       <form className={styles.form}>

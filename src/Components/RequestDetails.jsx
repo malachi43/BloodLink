@@ -1,9 +1,10 @@
-import "./requestdetails.css";
+// import "./requestdetails.css";
+import styled from "styled-components";
 
 export default function RequestDetails() {
   return (
-    <div className="requestDetailContainer">
-      <div className="requestDetailHeader">
+    <Container>
+      <div className="request-detail-header">
         <p>Request Details</p>
       </div>
       <div>
@@ -28,6 +29,33 @@ export default function RequestDetails() {
           illness and must not have donated blood in the last 3 months.
         </p>
       </div>
-    </div>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10px;
+  p {
+    font-size: 0.7rem;
+  }
+  .request-detail-header {
+    padding: 0.5em 1em;
+    color: #ffffff;
+    background-color: #8b0a1a;
+    text-align: start;
+    border-radius: 5px;
+  }
+
+  .request-detail-header p {
+    font-size: 1rem;
+  }
+
+  div {
+    padding: 0.5em 1em;
+    background-color: #ffffff;
+    text-align: start;
+    border-radius: 5px;
+  }
+`;
