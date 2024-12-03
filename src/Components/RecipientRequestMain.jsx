@@ -35,4 +35,12 @@ const Container = styled.div`
   grid-template-columns: 3fr 9fr;
   grid-template-rows: auto;
   gap: 20px;
+
+  @media (max-width:768px){
+    & {
+      margin: 0;
+      margin-block-start: 6em;
+    }
+      
+  }
 `;
