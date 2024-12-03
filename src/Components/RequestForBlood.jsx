@@ -8,8 +8,7 @@ export default function RequestForBlood() {
       <div class="blood-main">
         <p class="blood-header">Request for Blood Donation</p>
         <p class="body">Need blood? Sign up as recipient</p>
-        <button class="blood-btn">Sign Up</button>
-        <Link reloadDocument to='/requestform'><button className="bloodBtn">Request Now</button></Link
+        <Link reloadDocument to='/requestform'><button className="bloodBtn">Request Now</button></Link>
       </div>
     </Container>
   );
