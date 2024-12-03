@@ -25,9 +25,19 @@ const ColOne = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 768px) {
+    & {
+    }
+  }
 `;
 
-const ColTwo = styled(ColOne)``;
+const ColTwo = styled(ColOne)`
+  @media (max-width: 768px) {
+    & {
+    }
+  }
+`;
 
 const Container = styled.div`
   display: grid;
@@ -36,11 +46,12 @@ const Container = styled.div`
   grid-template-rows: auto;
   gap: 20px;
 
-  @media (max-width:768px){
+  @media (max-width: 768px) {
     & {
-      margin: 0;
+      display: grid;
+      grid-template-columns: auto;
+      gap: 20px;
       margin-block-start: 6em;
     }
-      
   }
 `;
