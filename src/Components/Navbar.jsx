@@ -7,6 +7,7 @@ export const Navbar = () => {
 
   return (
     <nav>
+      {/* Logo Section */}
       <Link reloadDocument to="/" className="title">
         <img 
           src="images/logo.png" 
@@ -14,11 +15,15 @@ export const Navbar = () => {
           className="logo"
         />
       </Link>
+
+      {/* Hamburger Menu Icon */}
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
         <span></span>
       </div>
+
+      {/* Navigation Menu */}
       <ul className={menuOpen ? "open" : ""}>
         <li>
           <NavLink reloadDocument to="/">Home</NavLink>
@@ -35,13 +40,18 @@ export const Navbar = () => {
         <li>
           <NavLink reloadDocument to="/ImpactDashboard">ImpactDashboard</NavLink>
         </li>
-        
         <li>
-          <NavLink reloadDocument to="/login">Login</NavLink>
+          {/* Login with arrow down */}
+          <NavLink reloadDocument to="/login">
+            Login <span className="arrow">▼</span>
+          </NavLink>
         </li>
         <li>
-  <NavLink reloadDocument to="/signup" className="signup">Sign Up</NavLink>
-</li>
+          {/* Sign Up with arrow down */}
+          <NavLink reloadDocument to="/signup" className="signup">
+            Sign Up <span className="arrow">▼</span>
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

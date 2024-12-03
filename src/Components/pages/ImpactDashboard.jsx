@@ -1,82 +1,140 @@
-// import React from "react";
-import { Bar, Pie } from "react-chartjs-2";
-import Chart from 'chart.js/auto';
-import {CategoryScale} from 'chart.js'; 
+import React from "react";
+import { Bar, Pie, Doughnut } from "react-chartjs-2";
+import Chart from "chart.js/auto";
+import { CategoryScale } from "chart.js";
 Chart.register(CategoryScale);
 
 const ImpactDashboard = () => {
+  // Data for the bar chart (Yearly progress of blood requests)
   const barData = {
     labels: ["2021", "2022", "2023", "2024"],
     datasets: [
       {
-        label: "Fulfillments",
-        data: [150, 200, 300, 400],
-        backgroundColor: "#A10A28",
+        label: "Fulfilled Request",
+        data: [160, 250, 350, 400],
+        backgroundColor: "#800000",
       },
       {
-        label: "Requests",
-        data: [199, 250, 370, 450],
-        backgroundColor: "#C0575C",
+        label: "Cancelled Request",
+        data: [200, 260, 200, 100],
+        backgroundColor: "#F5B7B1",
       },
     ],
   };
 
-
   const barOptions = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         position: "top",
       },
     },
+    scales: {
+      x: {
+        title: {
+          display: true,
+          text: "Year",
+        },
+      },
+      y: {
+        beginAtZero: true,
+        title: {
+          display: true,
+          text: "Blood Requests",
+        },
+      },
+    },
   };
 
-    // Data for Pie Charts
-    const communitiesData = {
-      labels: ["Hospitals", "Community Health Centers", "Blood Banks"],
-      datasets: [
-        {
-          data: [60, 30, 10],
-          backgroundColor: ["#A10A28", "#C0575C", "#E0A3AD"],
-        },
-      ],
-    };
-  
-    const donorsData = {
-      labels: ["Repeat Donors", "First-Time Donors"],
-      datasets: [
-        {
-          data: [70, 30],
-          backgroundColor: ["#A10A28", "#C0575C"],
-        },
-      ],
-    };
+  const communitiesData = {
+    labels: ["Hospitals", "Community Health Centers", "Blood Banks"],
+    datasets: [
+      {
+        data: [35, 30, 35],
+        backgroundColor: ["#800000", "#F5B7B1", "#E0A3AD"],
+      },
+    ],
+  };
 
+  const donorsData = {
+    labels: ["Repeat Donors", "First-Time Donors"],
+    datasets: [
+      {
+        data: [30, 70],
+        backgroundColor: ["#F5B7B1", "#800000"],
+      },
+    ],
+  };
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", padding: "20px", backgroundColor: "#f4f4f4" }}>
-    <h2 style={{ textAlign: "center", marginBottom: "20px" }}>IMPACT DASHBOARD</h2>
+    <div style={styles.container}>
 
-    {/* Bar Chart */}
-    <div style={{ marginBottom: "40px" }}>
-      <h3>Yearly Progress of Blood Requests: Increasing Fulfillments and Growing Demand</h3>
-      <Bar data={barData} options={barOptions} />
-    </div>
+      <div style={styles.chartContainer}>
+        <h3 style={styles.chartTitle}>
+          Yearly Progress of Blood Requests: Increasing Fulfillments and Growing Demand
+        </h3>
+        <div style={styles.chart}>
+          <Bar data={barData} options={barOptions} />
+        </div>
+      </div>
 
-    {/* Communities Supported */}
-    <div style={{ marginBottom: "40px" }}>
-      <h3>Communities Supported</h3>
-      <Pie data={communitiesData} />
-    </div>
+      <div style={styles.chartContainer}>
+        <h3 style={styles.chartTitle}>Communities Supported</h3>
+        <div style={styles.chart}>
+          <Doughnut data={communitiesData} options={{ maintainAspectRatio: false }} />
+        </div>
+      </div>
 
-    {/* Donors Chart */}
-    <div>
-      <h3>Percentage of First-Time Donors vs. Repeat Donors</h3>
-      <Pie data={donorsData} />
+      <div style={styles.chartContainer}>
+        <h3 style={styles.chartTitle}>Percentage of First-Time Donors vs. Repeat Donors</h3>
+        <div style={styles.chart}>
+          <Pie data={donorsData} options={{ maintainAspectRatio: false }} />
+        </div>
+      </div>
     </div>
-  </div>
-);
+  );
 };
 
+// Styles with responsiveness
+const styles = {
+  container: {
+    fontFamily: '"Rethink Sans", Arial, sans-serif',
+    fontWeight: 500,
+    fontSize: "13px",
+    padding: "20px",
+    backgroundColor: "#f4f4f4",
+  },
+  title: {
+    textAlign: "center",
+    fontSize: "20px",
+    marginBottom: "20px",
+  },
+  chartContainer: {
+    marginBottom: "40px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    padding: "10px",
+    width: "100%",
+  },
+  chartTitle: {
+    textAlign: "center",
+    marginBottom: "10px",
+  },
+  chart: {
+    width: "100%",
+    maxWidth: "600px",
+    height: window.innerWidth < 768 ? "300px" : "400px", // Responsive height
+  },
+};
+
+// Media queries for further customizations
+if (window.innerWidth < 768) {
+  styles.container.padding = "10px";
+  styles.chartContainer.padding = "5px";
+  styles.title.fontSize = "18px";
+  styles.chartTitle.fontSize = "14px";
+}
 
 export default ImpactDashboard;
