@@ -38,9 +38,9 @@ const Container = styled.div`
   background-color: #8b0a1a;
   color: #ffffff;
   border-radius: 5px;
-  font-size: 0.7rem;
+
   h1,
-  .clinic-name{
+  .clinic-name {
     text-align: center;
     margin-block-end: 1em;
     margin-block-start: 5em;
@@ -57,10 +57,11 @@ const Container = styled.div`
     margin-inline: 1em;
   }
 
-   div.info-wrapper .info p:nth-child(2){
-     text-align: center;
-     word-wrap: break-word;
-   }
+  div.info-wrapper .info p:nth-child(2) {
+    text-align: center;
+    word-wrap: break-word;
+  }
+
 `;
 
 const ImageWrapper = styled.div`

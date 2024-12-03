@@ -56,8 +56,24 @@ const HeaderTextContainer = styled.div`
   grid-column: 1/7;
   h1 {
     font-weight: 700;
-    font-size: 3rem;
+    font-size: 4rem;
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+
+    & .stat-wrapper .stat p:first-child {
+      font-size: 2.5em;
+    }
+
+    & .stat-wrapper .stat p:nth-child(2) {
+      font-size: 3em;
+    }
+  }
+
   .location-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -90,7 +106,7 @@ const HeaderTextContainer = styled.div`
       flex-direction: column;
 
       p:first-child {
-        font-size: 1.5em;
+        font-size: 2.5em;
         font-weight: 700;
       }
       p:nth-child(2) {
@@ -110,10 +126,9 @@ const HeaderTextContainer = styled.div`
     }
   }
 
-  @media (max-width:768px){
-  & {
-   
-  }
+  @media (max-width: 768px) {
+    & {
+    }
   }
 `;
 
