@@ -31,7 +31,7 @@ const ColTwo = styled(ColOne)``;
 
 const Container = styled.div`
   display: grid;
-  margin: 2em;
+  margin: 4em;
   grid-template-columns: 3fr 9fr;
   grid-template-rows: auto;
   gap: 20px;
