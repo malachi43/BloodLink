@@ -12,6 +12,10 @@ nav {
     font-weight: 400; /* Regular weight */
 }
 
+.re {
+    font-family: "Rethink Sans", Arial, sans-serif;
+}
+
 nav .title {
     font-size: 1.5rem;
     margin: 1rem;
