@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
 /* "Rethink Sans", sans-serif */
 .container {
   display: flex;
@@ -10,12 +12,15 @@
 .upcomingDonationHeader {
   font-weight: 600;
   color: #404040;
-  font-family: "Rethink Sans", sans-serif;
+  font-family: "Lora", serif;
+  font-weight: 700;
 }
 .upcomingText {
   font-size: 0.8rem;
   color: #404040;
   font-family: "Rethink Sans", sans-serif;
+  font-weight: 400;
+  margin-block-start: 0.5em;
 }
 
 @media (max-width: 768px) {

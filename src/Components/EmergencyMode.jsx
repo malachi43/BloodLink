@@ -66,6 +66,17 @@ const EmergencyContainer = styled.div`
     font-weight: 700;
     padding-block-end: 0.5em;
   }
+
+  .emergency-text {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .emergency-text {
+      width: 90%;
+    }
+  }
 `;
 
 const ParentContainer = styled.div`

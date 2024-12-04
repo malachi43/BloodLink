@@ -1,13 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
 .container {
   margin: 2em;
 }
 .header {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   width: 80%;
-  margin-block-end: 1em;
+  margin-block-end: 0.5em;
   color: #404040;
+  font-family: "Lora", serif;
 }
 .imageWrapper {
   position: relative;
@@ -37,10 +41,11 @@
   font-family: "Lora", serif;
 }
 .headerText {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-block-end: 1.5em;
   color: #404040;
   width: 50%;
+  font-family: "Lora", serif;
 }
 
 @media (max-width: 768px) {
