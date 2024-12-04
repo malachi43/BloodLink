@@ -98,6 +98,8 @@ export default function DonorOnTheirWay() {
 }
 
 const Contanier = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
   margin-block-start: 1em;
   display: grid;
   grid-template-columns: 1fr;
@@ -123,6 +125,7 @@ const Table = styled.table`
     padding: 0.5em;
     border: none;
     font-size: 0.7rem;
+    font-family: "Rethink Sans", sans-serif;
   }
   tr {
     border: none;
@@ -134,6 +137,7 @@ const Table = styled.table`
     padding: 0.5em;
     border: none;
     font-size: 0.7rem;
+    font-family: "Rethink Sans", sans-serif;
   }
   th:first-child {
     border-top-left-radius: 5px;

@@ -25,19 +25,9 @@ const ColOne = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-
-  @media (max-width: 768px) {
-    & {
-    }
-  }
 `;
 
-const ColTwo = styled(ColOne)`
-  @media (max-width: 768px) {
-    & {
-    }
-  }
-`;
+const ColTwo = styled(ColOne)``;
 
 const Container = styled.div`
   display: grid;

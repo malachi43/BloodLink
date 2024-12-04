@@ -77,21 +77,31 @@ export default function RecentUpdate() {
 }
 
 const Container = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
   width: 100%;
   margin-block-start: 2em;
+
+  p {
+    font-family: "Rethink Sans", sans-serif;
+  }
 
   & > p:first-child {
     font-size: 0.7rem;
     color: #8b0a1a;
     font-weight: 700;
     margin-block: 1em;
+    font-family: "Rethink Sans", sans-serif;
   }
-  p {
+  p.selected {
+    font-weight: 500;
   }
 
   .update-status {
     p {
       color: #ffffff;
+    }
+    p:nth-child(2) {
+      font-weight: 400;
     }
   }
   .update-container {

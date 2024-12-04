@@ -20,6 +20,8 @@ export default function DonorStat() {
 }
 
 const Container = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+  
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -36,8 +38,11 @@ const Container = styled.div`
   div p {
     text-align: center;
     color: #ffffff;
+    font-family: "Rethink Sans", sans-serif;
+    font-weight: 400;
   }
   div p:nth-child(2) {
     font-size: 1.5rem;
+    font-weight: 500;
   }
 `;
