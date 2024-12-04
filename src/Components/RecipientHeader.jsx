@@ -77,8 +77,7 @@ const HeaderTextContainer = styled.div`
   .location-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    margin-block-start: 10em;
-    margin-block-end: 4em;
+    margin-block: 4em;
     background-color: #008000;
     border-radius: 5px;
 
