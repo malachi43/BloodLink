@@ -1,5 +1,5 @@
-const imgUrl = "../images/doctor_blood_canister.png";
 import styled from "styled-components";
+const imgUrl = "../images/doctor_blood_canister.png";
 
 export default function RecipientHeader() {
   return (
