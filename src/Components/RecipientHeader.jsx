@@ -1,5 +1,5 @@
-const imgUrl = "../images/doctor_blood_canister.png";
 import styled from "styled-components";
+const imgUrl = "../images/doctor_blood_canister.png";
 
 export default function RecipientHeader() {
   return (
@@ -35,6 +35,9 @@ export default function RecipientHeader() {
 }
 
 const Container = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&display=swap");
+
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
   width: 100%;
 `;
 
@@ -57,8 +60,14 @@ const HeaderTextContainer = styled.div`
   h1 {
     font-weight: 700;
     font-size: 4rem;
+    font-family: "Lora", serif;
+    color: #404040;
   }
 
+  p{
+    font-family: "Rethink Sans", sans-serif;
+    color: #404040;
+  }
   .location-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -70,6 +79,7 @@ const HeaderTextContainer = styled.div`
       margin-block: 1em;
       background-color: transparent;
       padding-inline-start: 1em;
+      font-weight: 500;
     }
 
     button {
@@ -79,6 +89,21 @@ const HeaderTextContainer = styled.div`
       font-size: 0.7em;
       color: #008000;
       border-radius: 5px;
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px){
+    button {
+      font-size: 0.5em;
+      font-weight: 700;
+    }
+      input {
+      margin-block: 1em;
+      font-size: 0.7em;
+      background-color: transparent;
+      padding-inline-start: 1em;
+      font-weight: 500;
+    } 
     }
   }
   .stat-wrapper {
@@ -89,6 +114,10 @@ const HeaderTextContainer = styled.div`
     .stat {
       display: flex;
       flex-direction: column;
+
+      p{
+      font-family: "Lora", serif;
+      }
 
       p:first-child {
         font-size: 2.5em;
