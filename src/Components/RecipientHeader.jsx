@@ -59,21 +59,6 @@ const HeaderTextContainer = styled.div`
     font-size: 4rem;
   }
 
-  @media (max-width: 768px) {
-    h1 {
-      font-weight: 700;
-      font-size: 2.5rem;
-    }
-
-    & .stat-wrapper .stat p:first-child {
-      font-size: 2.5em;
-    }
-
-    & .stat-wrapper .stat p:nth-child(2) {
-      font-size: 3em;
-    }
-  }
-
   .location-wrapper {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -110,7 +95,7 @@ const HeaderTextContainer = styled.div`
         font-weight: 700;
       }
       p:nth-child(2) {
-        font-size: 0.5em;
+      font-size: 1em;
       }
 
       &:nth-child(2) {
@@ -123,13 +108,19 @@ const HeaderTextContainer = styled.div`
           text-align: end;
         }
       }
+        @media (max-width:768px){
+        }
     }
-  }
 
-  @media (max-width: 768px) {
-    & {
+    @media (max-width: 768px) {
+      & .stat-wrapper .stat p:nth-child(2) {
+          font-size: 1rem;
+        }
+        h1 {
+        font-size: 1rem;
+        }  
+      
     }
-  }
 `;
 
 const HeaderImageContainer = styled.div`

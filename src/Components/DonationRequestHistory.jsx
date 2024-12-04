@@ -111,6 +111,8 @@ export default function DonationRequestHistory() {
 }
 
 const Container = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
   width: 100%;
   margin-block: 2em;
   font-size: 0.7em;
@@ -125,6 +127,7 @@ const Container = styled.div`
     margin-block: 1em;
     color: #8b0a1a;
     font-weight: 700;
+    font-family: "Rethink Sans", sans-serif;
   }
 
   .search-wrapper {
@@ -136,6 +139,7 @@ const Container = styled.div`
     width: 100%;
     padding: 1em 3em;
     border-radius: 5px;
+    font-family: "Rethink Sans", sans-serif;
   }
 
   .table-wrapper {
@@ -151,6 +155,7 @@ const Container = styled.div`
   td {
     border: 1px solid rgba(255, 255, 255, 0.7);
     color: #ffffff;
+    font-family: "Rethink Sans", sans-serif;
   }
   td,
   th {

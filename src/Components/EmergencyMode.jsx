@@ -47,12 +47,28 @@ const Col = styled.div`
 `;
 
 const EmergencyContainer = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+  padding-block: 2em;
   margin-block-start: 1em;
   text-align: center;
   background-color: #8b0a1a1a;
   border-radius: 5px;
+  p {
+    font-family: "Rethink Sans", sans-serif;
+  }
+
+  .emergency-header {
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-block-end: 0.5em;
+  }
 `;
 
 const ParentContainer = styled.div`
+  margin-block: 3em;
   margin-inline: 2em;
 `;

@@ -44,7 +44,7 @@ export default function RequestTracker() {
                     <p>Pending</p>
                   </div>
                 </div>
-                <button class="cancel-request rqb">X Cancel Request</button>
+                <button>X Cancel Request</button>
               </div>
             </div>
             <div class="request-main">
@@ -69,7 +69,7 @@ export default function RequestTracker() {
                     <p>Pending</p>
                   </div>
                 </div>
-                <button class={`rqb`}>X Cancel Request</button>
+                <button>X Cancel Request</button>
               </div>
             </div>
           </div>
@@ -80,6 +80,8 @@ export default function RequestTracker() {
 }
 
 const Container = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
   margin-block-start: 2em;
   font-size: 0.7rem;
 
@@ -87,6 +89,7 @@ const Container = styled.div`
     font-weight: 700;
     margin-block: 1em;
     color: #8b0a1a;
+    font-family: "Rethink Sans", sans-serif;
   }
   .request-track-header {
     width: 100%;
@@ -106,6 +109,7 @@ const Container = styled.div`
 
   .request-status p {
     padding-bottom: 0.5em;
+    font-family: "Rethink Sans", sans-serif;
   }
 
   .search-wrapper {
@@ -117,6 +121,7 @@ const Container = styled.div`
     padding: 1em 3em;
     font-size: 0.7rem;
     border-radius: 5px;
+    font-family: "Rethink Sans", sans-serif;
   }
   .selected {
     border-bottom: 2px solid rgba(255, 255, 255, 0.7);
@@ -129,8 +134,7 @@ const Container = styled.div`
     justify-content: space-between;
     overflow-y: scroll;
   }
-  .request-main {
-  }
+
   .request {
     display: flex;
     gap: 4em;
@@ -156,10 +160,15 @@ const Container = styled.div`
     color: #404040;
     font-weight: 700;
     margin-block-end: 0.5em;
+    font-family: "Rethink Sans", sans-serif;
   }
   .request-field p {
     color: #404040;
     margin-block-end: 0.5em;
+    font-family: "Rethink Sans", sans-serif;
+  }
+  button {
+    font-family: "Rethink Sans", sans-serif;
   }
 `;
 

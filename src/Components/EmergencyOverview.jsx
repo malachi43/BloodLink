@@ -31,6 +31,8 @@ export default function EmergencyOverview() {
 }
 
 const Container = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
   width: 100%;
 
   .stat {
@@ -40,13 +42,14 @@ const Container = styled.div`
     margin-block: 1em;
     grid-template-columns: 6fr 6fr;
 
-    p{
-    font-size: 0.7rem;
+    p {
+      font-size: 0.7rem;
+      font-family: "Rethink Sans", sans-serif;
     }
   }
 
-  .stat div{
-    background-color: #FFFFFF;
+  .stat div {
+    background-color: #ffffff;
     padding: 0.5em 1em;
     text-align: start;
     border-radius: 5px;

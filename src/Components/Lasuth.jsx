@@ -33,6 +33,8 @@ export default function Lasuth() {
 }
 
 const Container = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@700&family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
   position: relative;
   width: 100%;
   background-color: #8b0a1a;
@@ -45,9 +47,16 @@ const Container = styled.div`
     margin-block-end: 1em;
     margin-block-start: 5em;
     line-height: 0.5;
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  p {
+    font-family: "Rethink Sans", sans-serif;
+    font-size: 0.7rem;
   }
   .info-header {
-    margin-inline-start: 1em;
+    margin-inline-start: 1.5em;
     margin-block-end: 1em;
   }
   div.info-wrapper .info {
@@ -61,7 +70,6 @@ const Container = styled.div`
     text-align: center;
     word-wrap: break-word;
   }
-
 `;
 
 const ImageWrapper = styled.div`
