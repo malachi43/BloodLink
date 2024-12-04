@@ -28,6 +28,13 @@ const ImpactDashboard = () => {
     plugins: {
       legend: {
         position: "top",
+        labels: {
+          font: {
+            size: 14, // Font size
+            family: '"Rethink Sans", Arial, sans-serif', // Font family
+            weight: "regular", // Font weight
+          },
+        },
       },
     },
     scales: {
@@ -35,6 +42,16 @@ const ImpactDashboard = () => {
         title: {
           display: true,
           text: "Year",
+          font: {
+            size: 14,
+            family: '"Rethink Sans", Arial, sans-serif',
+          },
+        },
+        ticks: {
+          font: {
+            size: 14,
+            family: '"Rethink Sans", Arial, sans-serif',
+          },
         },
       },
       y: {
@@ -42,6 +59,16 @@ const ImpactDashboard = () => {
         title: {
           display: true,
           text: "Blood Requests",
+          font: {
+            size: 14,
+            family: '"Rethink Sans", Arial, sans-serif',
+          },
+        },
+        ticks: {
+          font: {
+            size: 14,
+            family: '"Rethink Sans", Arial, sans-serif',
+          },
         },
       },
     },
@@ -67,9 +94,24 @@ const ImpactDashboard = () => {
     ],
   };
 
+  const doughnutAndPieOptions = {
+    maintainAspectRatio: false,
+    plugins: {
+      legend: {
+        position: "top",
+        labels: {
+          font: {
+            size: 14, // Font size for labels
+            family: '"Rethink Sans", Arial, sans-serif', // Font family
+            weight: "regular", // Regular weight
+          },
+        },
+      },
+    },
+  };
+
   return (
     <div style={styles.container}>
-
       <div style={styles.chartContainer}>
         <h3 style={styles.chartTitle}>
           Yearly Progress of Blood Requests: Increasing Fulfillments and Growing Demand
@@ -82,14 +124,14 @@ const ImpactDashboard = () => {
       <div style={styles.chartContainer}>
         <h3 style={styles.chartTitle}>Communities Supported</h3>
         <div style={styles.chart}>
-          <Doughnut data={communitiesData} options={{ maintainAspectRatio: false }} />
+          <Doughnut data={communitiesData} options={doughnutAndPieOptions} />
         </div>
       </div>
 
       <div style={styles.chartContainer}>
         <h3 style={styles.chartTitle}>Percentage of First-Time Donors vs. Repeat Donors</h3>
         <div style={styles.chart}>
-          <Pie data={donorsData} options={{ maintainAspectRatio: false }} />
+          <Pie data={donorsData} options={doughnutAndPieOptions} />
         </div>
       </div>
     </div>
@@ -120,6 +162,8 @@ const styles = {
   },
   chartTitle: {
     textAlign: "center",
+    fontFamily: '"Rethink Sans", Arial, sans-serif',
+    fontSize: "28px",
     marginBottom: "10px",
   },
   chart: {
