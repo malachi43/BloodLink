@@ -18,7 +18,7 @@ export default function DonorProfile() {
       if (element) {
         element.scrollIntoView({
           behavior: "smooth",
-          block: "center", // Ensures the element is in the center of the screen
+          // block: "center", // Ensures the element is in the center of the screen
         });
       }
     }

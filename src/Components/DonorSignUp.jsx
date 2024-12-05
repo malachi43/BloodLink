@@ -1,10 +1,10 @@
 let DonorSignUp = () => {
     return (
-        <div className="md:flex gap-20 items-center place-self-center" id="donateBlood">
+        <div className="md:flex gap-20 items-center place-self-center" >
             <img src="images/donor_pic.png" alt="donor-pic" className="rounded-lg" />
 
             <div>
-                <form className="pt-10 flex space-y-4 flex-col">
+                <form className="pt-10 flex space-y-4 flex-col" id="donateBlood">
                     <input type="text" placeholder="Full name" className="border-2 border-[#40404069] rounded-md p-2 w-full" />
                     <input type="date" placeholder="Date of Birth" className="border-2 border-[#40404069] rounded-md p-2 w-full" />
                     <input type="number" placeholder="Phone Number" className="border-2 border-[#40404069] rounded-md p-2 w-full" />
