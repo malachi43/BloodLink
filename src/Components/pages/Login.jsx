@@ -1,30 +1,30 @@
 import React from "react";
-import "./SignupOptions.css";
+import "./LoginOptions.css";
 
-const SignupOptions = () => {
+const LoginOptions = () => {
   return (
-    <div className="Sign-options-container">
-      <div className="Sign-option">
-        <a href="/donor-signup" className="signup-link">
+    <div className="login-options-container">
+      <div className="login-option">
+        <a href="/donor-login" className="login-link">
           <div className="link-content">
             <img 
               src="../images/postive.png" 
               alt="Donor Icon" 
               className="icon donor-icon" 
             />
-            <span className="text">Signup as a Donor</span>
+            <span className="text">Login as a Donor</span>
           </div>
         </a>
       </div>
       <div className="login-option">
-        <a href="/recipient-Signup" className="Signup-link">
+        <a href="/recipient-login" className="login-link">
           <div className="link-content">
             <img 
               src="../images/negavtive.png" 
               alt="Recipient Icon" 
               className="icon recipient-icon" 
             />
-            <span className="text">Signup as a Recipient</span>
+            <span className="text">Login as a Recipient</span>
           </div>
         </a>
       </div>
@@ -32,4 +32,4 @@ const SignupOptions = () => {
   );
 };
 
-export default SignupOptions;
+export default LoginOptions;
