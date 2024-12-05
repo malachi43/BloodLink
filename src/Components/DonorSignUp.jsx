@@ -5,7 +5,7 @@ let DonorSignUp = () => {
 
             <div>
                 <form className="pt-10 flex space-y-4 flex-col">
-                    <input type="text" placeholder="full name" className="border-2 border-[#40404069] rounded-md p-2 w-full" />
+                    <input type="text" placeholder="Full name" className="border-2 border-[#40404069] rounded-md p-2 w-full" />
                     <input type="date" placeholder="Date of Birth" className="border-2 border-[#40404069] rounded-md p-2 w-full" />
                     <input type="number" placeholder="Phone Number" className="border-2 border-[#40404069] rounded-md p-2 w-full" />
                     <input type="email" placeholder="Email address" className="border-2 border-[#40404069] rounded-md p-2 w-full" />

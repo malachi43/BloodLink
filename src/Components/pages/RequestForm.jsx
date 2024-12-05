@@ -88,7 +88,7 @@ let RequestForm = () => {
 
                 
             </form>
-            <Link reloadDocument to="/receive-blood#requestForBlood"><div className="place-self-center"><button className="p-4 bg-[#008000] rounded-lg text-white">Submit Request</button></div></Link>
+            <Link reloadDocument to="/home"><div className="place-self-center"><button className="p-4 bg-[#008000] rounded-lg text-white">Submit Request</button></div></Link>
         </div>
     )
 }
