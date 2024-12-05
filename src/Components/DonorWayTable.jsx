@@ -154,7 +154,7 @@ const Socials = styled.div`
   display: flex;
   justify-content: flex-start;
   background-color: #ffffff;
-  padding-inline: 0.5em;
+  padding: 0.5em;
   span {
     max-width: 100%;
     min-height: auto%;
@@ -180,7 +180,7 @@ const OtherInfoContainer = styled.div`
     & {
       display: grid;
       grid-template-columns: 1fr;
-      flex-direction: column;
+      // flex-direction: column;
     }
   }
 `;
@@ -210,7 +210,7 @@ const Info = styled.div`
       background-color: #f3e7e8;
       padding: 1em;
       width: 100%;
-      border-radius: 5px;
+      border-radius: none;
     }
   }
 `;
@@ -221,7 +221,6 @@ const Col = styled.div`
   gap: 0.2em;
   width: 1;
   margin-block: 0.5em;
-  margin-inline-end: 0.5em;
   &:nth-child(2) {
     flex: 1;
   }
@@ -234,6 +233,8 @@ const Summary = styled.div`
   @media (max-width: 768px) {
     & {
       gap: 0.2em;
+      background-color: #f3e7e8;
+      justify-content: space-between;
     }
   }
 `;
@@ -253,6 +254,11 @@ const Success = styled.div`
   @media (max-width: 768px) {
     & {
       padding: 1em;
+      border-radius: 5px;
+      background-color: inherit;
+    }
+    & p:first-child {
+      text-align: center;
     }
   }
 `;
