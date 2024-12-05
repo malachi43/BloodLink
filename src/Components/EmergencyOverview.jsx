@@ -67,4 +67,10 @@ const Container = styled.div`
     display: grid;
     grid-template-rows: auto;
   }
+
+  @media (max-width: 768px) {
+    .stat div {
+      background-color: #f3e7e8;
+    }
+  }
 `;

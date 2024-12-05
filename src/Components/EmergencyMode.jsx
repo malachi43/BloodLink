@@ -2,6 +2,7 @@ import EmergencyOverview from "./EmergencyOverview";
 import ModifyCancelRequest from "./ModifyCancelRequest";
 import RequestDetails from "./RequestDetails";
 import DonorOnTheirWay from "./DonorOnTheirWay";
+import Map from "./Map";
 // import "./emergencymode.css";
 import styled from "styled-components";
 
@@ -23,6 +24,7 @@ export default function EmergencyMode() {
           </Col>
           <Col>
             <DonorOnTheirWay />
+            <Map/>
           </Col>
         </Container>
       </EmergencyContainer>
@@ -73,6 +75,9 @@ const EmergencyContainer = styled.div`
   }
 
   @media (max-width: 768px) {
+    & {
+      background-color: #ffffff;
+    }
     .emergency-text {
       width: 90%;
     }
@@ -80,6 +85,8 @@ const EmergencyContainer = styled.div`
 `;
 
 const ParentContainer = styled.div`
+ display: flex;
+ flex-direction: column;
   margin-block: 3em;
   margin-inline: 2em;
 `;
