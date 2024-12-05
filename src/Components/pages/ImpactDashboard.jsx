@@ -31,7 +31,7 @@ const ImpactDashboard = () => {
         labels: {
           font: {
             size: 14, // Font size
-            family: '"Rethink Sans", Arial, sans-serif', // Font family
+            family: '"Rethink Sans", sans-serif', // Font family
             weight: "regular", // Font weight
           },
         },
@@ -44,13 +44,13 @@ const ImpactDashboard = () => {
           text: "Year",
           font: {
             size: 14,
-            family: '"Rethink Sans", Arial, sans-serif',
+            family: '"Rethink Sans", sans-serif',
           },
         },
         ticks: {
           font: {
             size: 14,
-            family: '"Rethink Sans", Arial, sans-serif',
+            family: '"Rethink Sans", sans-serif',
           },
         },
       },
@@ -61,13 +61,13 @@ const ImpactDashboard = () => {
           text: "Blood Requests",
           font: {
             size: 14,
-            family: '"Rethink Sans", Arial, sans-serif',
+            family: '"Rethink Sans",sans-serif',
           },
         },
         ticks: {
           font: {
             size: 14,
-            family: '"Rethink Sans", Arial, sans-serif',
+            family: '"Rethink Sans", sans-serif',
           },
         },
       },
@@ -102,7 +102,7 @@ const ImpactDashboard = () => {
         labels: {
           font: {
             size: 14, // Font size for labels
-            family: '"Rethink Sans", Arial, sans-serif', // Font family
+            family: '"Rethink Sans",sans-serif', // Font family
             weight: "regular", // Regular weight
           },
         },
@@ -141,7 +141,7 @@ const ImpactDashboard = () => {
 // Styles with responsiveness
 const styles = {
   container: {
-    fontFamily: '"Rethink Sans", Arial, sans-serif',
+    fontFamily: '"Rethink Sans",sans-serif',
     fontWeight: 500,
     fontSize: "13px",
     padding: "20px",
@@ -162,7 +162,7 @@ const styles = {
   },
   chartTitle: {
     textAlign: "center",
-    fontFamily: '"Rethink Sans", Arial, sans-serif',
+    fontFamily: '"Rethink Sans",sans-serif',
     fontSize: "28px",
     marginBottom: "10px",
   },
