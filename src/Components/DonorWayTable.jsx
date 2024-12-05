@@ -172,7 +172,7 @@ const OtherInfoContainer = styled.div`
   // display: flex;
   display: grid;
   grid-template-columns: 6fr 6fr;
-  gap: 20px;
+  gap: 10px;
   P {
     font-size: 0.7rem;
   }

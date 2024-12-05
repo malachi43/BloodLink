@@ -5,6 +5,7 @@ import EmergencyMode from "../EmergencyMode";
 import RecipientRequestMain from "../RecipientRequestMain";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import Login from "./Login";
 
 export default function ReceiveBlood() {
   const location = useLocation();
@@ -24,6 +25,7 @@ export default function ReceiveBlood() {
       <RecipientRequestMain />
       <RequestForBlood />
       <EmergencyMode />
+      <Login/>
     </Container>
   );
 }

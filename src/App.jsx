@@ -29,11 +29,11 @@ function App() {
         <Route path="/ImpactDashboard" element={<ImpactDashboard />} />{" "}
         {/* Group Donation route */}
         <Route path="/about" element={<About />} /> {/* About route */}
-        { <Route path="/login" element={<Login />} /> }
-        { <Route path="/signup" element={<Signup />} /> }
+        {<Route path="/login" element={<Login/>} />}
+        {<Route path="/signup" element={<Signup />} />}
         <Route path="/requestform" element={<RequestForm />} />
         <Route path="/verification" element={<Verification />} />
-        <Route path="/donor-login" element={<LoginForm />} />
+        <Route path="/donor-login" element={<Login />} />
       </Routes>
       <Footer />
     </div>
