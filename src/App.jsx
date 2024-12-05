@@ -12,6 +12,7 @@ import Login from "./Components/pages/Login";
 import Signup from "./Components/pages/Signup";
 import RequestForm from "./Components/pages/RequestForm";
 import Verification from "./Components/pages/Verification";
+import LoginForm from "./Components/pages/LoginForm";
 
 function App() {
   return (
@@ -30,8 +31,9 @@ function App() {
         <Route path="/about" element={<About />} /> {/* About route */}
         { <Route path="/login" element={<Login />} /> }
         { <Route path="/signup" element={<Signup />} /> }
-        {/* <Route path="/requestform" element={<RequestForm />} /> */}
-        {/* <Route path="/verification" element={<Verification />} /> */}
+        <Route path="/requestform" element={<RequestForm />} />
+        <Route path="/verification" element={<Verification />} />
+        <Route path="/donor-login" element={<LoginForm />} />
       </Routes>
       <Footer />
     </div>

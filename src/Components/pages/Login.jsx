@@ -3,7 +3,8 @@ import "./LoginOptions.css";
 
 const LoginOptions = () => {
   return (
-    <div className="login-options-container">
+    <div className="pt-10">
+          <div className="login-options-container bg-[#8b0a192f] w-fit p-4 rounded-lg place-self-center">
       <div className="login-option">
         <a href="/donor-login" className="login-link">
           <div className="link-content">
@@ -17,7 +18,7 @@ const LoginOptions = () => {
         </a>
       </div>
       <div className="login-option">
-        <a href="/recipient-login" className="login-link">
+        <a href="/donor-login" className="login-link">
           <div className="link-content">
             <img 
               src="../images/negavtive.png" 
@@ -28,6 +29,7 @@ const LoginOptions = () => {
           </div>
         </a>
       </div>
+    </div>
     </div>
   );
 };
