@@ -6,7 +6,8 @@ import { Link } from "react-router-dom";
 const SignupOptions = () => {
 
   return (
-    <div className="Sign-options-container">
+    <div className="pt-10">
+          <div className="Sign-options-container bg-[#8b0a192f] w-fit p-4 rounded-lg place-self-center">
       <div className="Sign-option">
         <Link reloadDocument to="/donate-blood#donateBlood" className="signup-link">
           <div className="link-content">
@@ -31,6 +32,7 @@ const SignupOptions = () => {
           </div>
         </Link>
       </div>
+    </div>
     </div>
   );
 };
