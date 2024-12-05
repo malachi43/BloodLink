@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
@@ -45,7 +46,9 @@ const LoginForm = () => {
         <p>
           <a href="/forgot-password" style={{ color: '#32CD32', textDecoration: 'none' }}>Forgot Password?</a>
         </p>
-        <button
+
+      </form>
+      <Link to="/home">        <button
           type="submit"
           style={{
             width: '100%',
@@ -59,8 +62,7 @@ const LoginForm = () => {
           }}
         >
           Log In
-        </button>
-      </form>
+        </button></Link>
       <div style={{ textAlign: 'center', margin: '20px 0' }}>
         <p>Or log in with</p>
         <button
