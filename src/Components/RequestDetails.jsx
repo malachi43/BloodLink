@@ -61,4 +61,10 @@ const Container = styled.div`
     text-align: start;
     border-radius: 5px;
   }
+
+  @media (max-width: 768px) {
+    div {
+      background-color: #f3e7e8;
+    }
+  }
 `;

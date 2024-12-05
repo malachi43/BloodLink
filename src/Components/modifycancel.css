@@ -36,6 +36,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    order: 999;
   }
   .modifyCancelContainer .modifyBtn, .modifyCancelContainer .cancelBtn{
     width: 90%;
