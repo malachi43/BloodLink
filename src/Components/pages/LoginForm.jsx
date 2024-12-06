@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa"; // Import eye icons from react-icons
+import { Link } from "react-router-dom";
 
 const googleIcon = "../../../images/google-icon2.png";
 const facebookIcon = "../../../images/facebook-icon2.png";
@@ -35,7 +36,7 @@ export default function Login() {
           </div>
         </InputWrapper>
         <p className="forgot-password">Forgot Password?</p>
-        <button className="login-btn">Log In</button>
+        <Link reloadDocument to="/home"><button className="login-btn">Log In</button></Link>
         <div className="option-text">
           <div className="line"></div>
           <p>Or log in with</p>
