@@ -4,10 +4,10 @@ import { Link } from "react-router-dom";
 
 export default function RequestForBlood() {
   return (
-    <Container class="container" id="requestForBlood">
+    <Container class="container" >
       <div class="blood-main">
-        <p class="blood-header">Request for Blood Donation</p>
-        <p class="body">Need blood? Sign up as recipient</p>
+        <p class="blood-header" >Request for Blood Donation</p>
+        <p class="body" id="requestForBlood">Need blood? Sign up as recipient</p>
         <Link reloadDocument to="/verification">
           <button className="bloodBtn">Request Now</button>
         </Link>

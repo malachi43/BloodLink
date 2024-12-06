@@ -14,7 +14,7 @@ export default function ReceiveBlood() {
       const element = document.querySelector(location.hash);
       element.scrollIntoView({
         behavior: "smooth",
-        block: "center", // Ensures the element is in the center of the screen
+        // block: "center", // Ensures the element is in the center of the screen
       });
     }
   }, [location]);
