@@ -87,15 +87,18 @@ const MainContainer = styled.div`
     font-family: "Lora", serif;
     font-size: 0.9rem;
   }
+
   .fb {
     color: rgba(0, 0, 255, 0.7);
   }
+
   .line {
     border: 1px solid #d9d9d94d;
     width: 30%;
     background-color: #d9d9d94d;
     transform: rotateX(180deg);
   }
+
   .option-text {
     margin-block: 1em;
     display: flex;
@@ -103,6 +106,7 @@ const MainContainer = styled.div`
     align-items: center;
     font-size: 0.9rem;
   }
+    
   .img-wrapper {
     width: 13px;
     height: 13px;

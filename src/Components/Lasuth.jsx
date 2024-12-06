@@ -1,4 +1,3 @@
-import "./lasuth.css";
 import styled from "styled-components";
 const imgUrl = "../../images/lasuth.png";
 

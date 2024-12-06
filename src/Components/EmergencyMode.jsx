@@ -3,10 +3,15 @@ import ModifyCancelRequest from "./ModifyCancelRequest";
 import RequestDetails from "./RequestDetails";
 import DonorOnTheirWay from "./DonorOnTheirWay";
 import Map from "./Map";
-// import "./emergencymode.css";
 import styled from "styled-components";
+import device from "../../device.js";
+import { useMediaQuery } from "react-responsive";
 
 export default function EmergencyMode() {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+
   return (
     <ParentContainer>
       <EmergencyContainer class="emergency-container">
@@ -20,11 +25,12 @@ export default function EmergencyMode() {
           <Col>
             <EmergencyOverview />
             <RequestDetails />
-            <ModifyCancelRequest />
+            {isMobile ? "" : <ModifyCancelRequest />}
           </Col>
           <Col>
             <DonorOnTheirWay />
-            <Map/>
+            <Map />
+            {isMobile ? <ModifyCancelRequest /> : ""}
           </Col>
         </Container>
       </EmergencyContainer>
@@ -37,7 +43,7 @@ const Container = styled.div`
   margin: 2em;
   gap: 20px;
   grid-template-columns: 6fr 6fr;
-  @media (max-width: 768px) {
+  @media ${device["mobile-device"]} {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -74,7 +80,7 @@ const EmergencyContainer = styled.div`
     margin: 0 auto;
   }
 
-  @media (max-width: 768px) {
+  @media ${device["mobile-device"]} {
     & {
       background-color: #ffffff;
     }
@@ -85,8 +91,8 @@ const EmergencyContainer = styled.div`
 `;
 
 const ParentContainer = styled.div`
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
   margin-block: 3em;
   margin-inline: 2em;
 `;
