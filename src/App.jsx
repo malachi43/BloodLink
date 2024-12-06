@@ -34,6 +34,7 @@ function App() {
         <Route path="/requestform" element={<RequestForm />} />
         <Route path="/verification" element={<Verification />} />
         <Route path="/donor-login" element={<Login />} />
+        <Route path="/LoginForm" element={<LoginForm />} />
       </Routes>
       <Footer />
     </div>
