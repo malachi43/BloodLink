@@ -1,5 +1,6 @@
 import groupDonation from "../pages/group-donation.png";
 import "../Navbar.css"
+import { Link } from "react-router-dom";
 
 export const Groupdonation = () => {
   return (
@@ -17,11 +18,12 @@ export const Groupdonation = () => {
             Come together to save lives and make a greater <br />
             impact. Join our community of donors today !
           </p>
+          <Link reloadDocument to="/signup">
           <button
             className={`bg-[#008000] hover:bg-[#008000e1] text-white p-3 rounded-lg pr-6 pl-6 re`}
           >
             Get Started
-          </button>
+          </button></Link>
         </div>
       </div>
 
@@ -107,11 +109,13 @@ export const Groupdonation = () => {
             save lives together."
           </p>
 
+          <Link reloadDocument to="/signup">
           <button
             className={`bg-[#008000] hover:bg-[#008000e1] text-white p-3 rounded-lg w-[100%] re`}
           >
             Start Now
-          </button>
+          </button></Link>
+
         </div>
       </div>
 

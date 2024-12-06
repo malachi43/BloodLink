@@ -1,5 +1,6 @@
 // import hero from "../pages/hero-img.png";
 import "../Navbar.css";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   return (
@@ -17,11 +18,13 @@ export const Home = () => {
             needs a blood transfusion, and your contribution is critical.
           </p>
           <div>
+            <Link reloadDocument to="/donate-blood#donateBlood">
             <button
               className={`bg-[#008000] hover:bg-green-600 p-3 rounded-lg re font-bold place-items-start pl-6 pr-6 `}
             >
               Donate Now
             </button>
+            </Link>
           </div>
 
           {/* <div className="w-[100%] h-[60vh] flex justify-center items-center bg-cover bg-center max-[700px]:hidden rounded-lg" style={{backgroundImage:`url(${hero})`}}>

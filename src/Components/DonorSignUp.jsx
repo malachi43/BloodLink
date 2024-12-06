@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 let DonorSignUp = () => {
   return (
-    <div className="md:flex gap-20 items-center place-self-center">
-      <img src="images/donor_pic.png" alt="donor-pic" className="rounded-lg mx-2" />
+    <div className="md:flex gap-20 items-center place-self-center m-[2em]">
+      <img src="images/donor_pic.png" alt="donor-pic" className="rounded-lg" />
 
       <div className={`styles.container max-md:pt-4`}>
         <form className={styles.form} id="donateBlood">
