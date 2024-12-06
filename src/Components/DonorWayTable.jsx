@@ -308,7 +308,7 @@ const StopWatchWrapper = styled.div`
   width: 40px;
   height: 40px;
   margin-block: 0.5em;
-  margin: auto;
+  margin: 0 auto;
 `;
 
 const Time = styled.p`
