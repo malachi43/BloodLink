@@ -62,15 +62,28 @@ export default function DonorWayMobile() {
           <tbody>
             <tr>
               <td>View Info</td>
-              <td>icon</td>
+              <td>
+                <span>
+                  <i class="fa-solid fa-phone"></i>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>View Info</td>
-              <td>icon</td>
+              <td>
+                <span>
+                  <i class="fa-solid fa-message"></i>
+                </span>
+              </td>
             </tr>
             <tr>
               <td>View Info</td>
-              <td>icon</td>
+              <td>
+                {" "}
+                <span>
+                  <i class="fa-brands fa-whatsapp"></i>
+                </span>{" "}
+              </td>
             </tr>
           </tbody>
         </table>
@@ -109,5 +122,10 @@ const UserInfo = styled.div`
     padding: 0.5em;
     font-size: 0.9em;
     font-family: "Rethink Sans", sans-serif;
+  }
+
+  td span {
+  color: #8B0A1A;
+  cursor: pointer;
   }
 `;
