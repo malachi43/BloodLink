@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import device from "../../device.js";
+
 const imgUrl = "../images/doctor_blood_canister.png";
 
 export default function RecipientHeader() {
@@ -47,7 +49,7 @@ const Header = styled.div`
   gap: 40px;
   grid-gap: 40px;
 
-  @media (max-width: 768px) {
+  @media ${device["mobile-device"]} {
     & {
       display: flex;
       flex-direction: column;
@@ -64,7 +66,7 @@ const HeaderTextContainer = styled.div`
     color: #404040;
   }
 
-  @media (max-width:768px){
+  @media ${device["mobile-device"]}{
   & h1 {
     font-size: 1.9rem;
   }
@@ -99,7 +101,7 @@ const HeaderTextContainer = styled.div`
       font-weight: 700;
     }
 
-    @media (max-width: 768px){
+    @media ${device["mobile-device"]}{
     button {
       font-size: 0.5em;
       font-weight: 700;
@@ -146,11 +148,9 @@ const HeaderTextContainer = styled.div`
           text-align: end;
         }
       }
-        @media (max-width:768px){
-        }
     }
 
-    @media (max-width: 768px) {
+    @media ${device["mobile-device"]} {
       & .stat-wrapper .stat p:nth-child(2) {
           font-size: 1rem;
         }

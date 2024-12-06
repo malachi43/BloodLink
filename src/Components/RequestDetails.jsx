@@ -39,6 +39,8 @@ const Container = styled.div`
   display: grid;
   grid-template-rows: auto;
   gap: 10px;
+  color: #404040;
+
   p {
     font-size: 0.7rem;
     font-family: "Rethink Sans", sans-serif;
