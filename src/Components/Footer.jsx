@@ -27,8 +27,8 @@ with patients in need.</p>
                 <div className="">
                 <p className={`text-[#8B0A1A] text-4xl font-semibold font-lora`}>Engage</p>
                 <ul className='space-y-1'>
-                    <Link reloadDocument to='/requestform'><li className={`hover:text-[#8B0A1A] hover:cursor-pointer re`}>Donate Blood</li></Link>
-                    <li className={`hover:text-[#8B0A1A] hover:cursor-pointer re`}>Host a Blood Drive</li>
+                    <Link reloadDocument to='/verification'><li className={`hover:text-[#8B0A1A] hover:cursor-pointer re`}>Donate Blood</li></Link>
+                    <Link reloadDocument to="/signup"><li className={`hover:text-[#8B0A1A] hover:cursor-pointer re`}>Host a Blood Drive</li></Link>
                     <li className={`hover:text-[#8B0A1A] hover:cursor-pointer re`}>Stories of Hope</li>
                     <li className={`hover:text-[#8B0A1A] hover:cursor-pointer re`}>Support Us</li>
                     <Link reloadDocument to='/About'><li className={`hover:text-[#8B0A1A] hover:cursor-pointer re`}>About Us</li></Link>

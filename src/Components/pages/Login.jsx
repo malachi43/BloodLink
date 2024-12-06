@@ -1,6 +1,7 @@
 import styled from "styled-components";
 const googleIcon = "../../../images/google-icon2.png";
 const facebookIcon = "../../../images/facebook-icon2.png";
+import {Link} from 'react-router-dom'
 
 export default function Login() {
   return (
@@ -15,7 +16,7 @@ export default function Login() {
           <input type="text" placeholder="Password" />
         </InputWrapper>
         <p class="forgot-password">Forgot Password?</p>
-        <button class="login-btn">Log In</button>
+        <Link reloadDocument to="/home"><button class="login-btn">Log In</button></Link>
         <div class="option-text">
           <div class="line"></div>
           <p>Or log in with</p>

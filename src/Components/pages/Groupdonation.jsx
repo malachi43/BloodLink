@@ -83,7 +83,7 @@ export const Groupdonation = () => {
         <img
           src="../images/group-donation2.png"
           alt="group-donation 2"
-          className={`place-self-center max-md:pt-4`}
+          className={`place-self-center max-md:pt-4 rounded-lg px-1`}
         />
 
         <div className="text-center space-y-6">
@@ -179,7 +179,7 @@ export const Groupdonation = () => {
             <button
               className={`bg-[#008000] hover:bg-[#008000e1] text-white p-3 rounded-lg pr-6 pl-6 re`}
             >
-              Start Now
+              Send
             </button>
           </div>
         </div>
