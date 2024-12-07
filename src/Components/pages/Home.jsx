@@ -1,4 +1,3 @@
-// import hero from "../pages/hero-img.png";
 import "../Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -6,7 +5,7 @@ export const Home = () => {
   return (
     <div>
       <div className={`bg-[#8B0A1A] min-[700px]:h-[100vh]`}>
-        <div className={`text-white space-y-2 lg:mx-[180px] mx-16 pt-4 pb-4`}>
+        <div className={`text-white space-y-2 lg:mx-[2em] pt-4 pb-4`}>
           <p className={`lg:text-4xl md:text-2xl font-bold font-lora`}>
             Give the Gift of Life – <br /> Donate Blood Today!
           </p>
@@ -27,29 +26,25 @@ export const Home = () => {
             </Link>
           </div>
 
-          {/* <div className="w-[100%] h-[60vh] flex justify-center items-center bg-cover bg-center max-[700px]:hidden rounded-lg" style={{backgroundImage:`url(${hero})`}}>
-         <img src="../images/play.png" alt="play" className={`w-20 g-20 hover:cursor-pointer`} />
-         </div> */}
           <iframe
             className="w-[100%] h-[60vh] rounded-lg"
             src="https://www.youtube.com/embed/n_ageaVcc-0?si=jwFXiXKRe_UsJ60j"
             title="YouTube video player"
           ></iframe>
-          {/* <img src="../images/hero-img-mobile.png" alt="hero" className={`mx-auto rounded-lg hamburger min-[700px]:hidden`} /> */}
         </div>
       </div>
 
-      <div className={`pt-2`}>
+      <div className={`pt-10`}>
         <div
-          className={`bg-[#8B0A1A1A] lg:flex justify-evenly rounded-lg max-sm:flex max-sm:flex-col-reverse`}
+          className={`bg-[#8B0A1A1A] lg:flex justify-between rounded-lg max-sm:flex max-sm:flex-col-reverse`}
         >
           <img
-            className={`max-lg:mx-auto`}
+            className={`max-lg:mx-auto lg:mx-[2em]`}
             src="images/emergency.png"
             alt="emergency"
           />
 
-          <div className="place-self-center flex flex-col space-y-4">
+          <div className="place-self-center flex flex-col space-y-4 mx-[2em]">
             <p className="md:text-4xl font-bold font-lora">
               Activate Emergency Mode – <br /> Get Help Now!
             </p>
@@ -74,7 +69,7 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className={`pt-6 text-center max-md:text-sm`}>
+        <div className={`pt-10 text-center max-md:text-sm`}>
           <p className={`md:text-4xl font-lora`}>
             Quickly <span className={`text-[#008000]`}>connect</span> with blood
             donors or recipients near you.
@@ -88,7 +83,7 @@ export const Home = () => {
         </div>
 
         <div
-          className={`pt-10 mx-16 md:flex max-md:space-y-4 justify-around items-center text-center`}
+          className={`pt-10 mx-[3em] md:flex max-md:space-y-4 justify-between items-center text-center`}
         >
           <div className={`space-y-2`}>
             <img
@@ -129,7 +124,7 @@ export const Home = () => {
         </div>
 
         <div
-          className={`relative bg-[#8B0A1A] pt-4 mt-4 md:pb-[250px] max-md:pb-[180px]`}
+          className={`relative bg-[#8B0A1A] pt-10 mt-10 md:pb-[180px] max-md:pb-[180px]`}
         >
           <div className={`text-center text-white space-y-4`}>
             <p className={`text-4xl font-bold font-lora`}>How It works</p>
@@ -142,7 +137,7 @@ export const Home = () => {
           </div>
 
           <div
-            className={`absolute grid grid-cols-7 md:pl-8 pt-10 max-[801px]:hidden mx-[120px]`}
+            className={`absolute grid grid-cols-7 md:pl-8 pt-10 max-[801px]:hidden`}
           >
             <img src="../images/card1.png" alt="sign up" />
             <img className={`mx-auto`} src="images/arrow.png" alt="arrow" />
@@ -164,7 +159,7 @@ export const Home = () => {
         </div>
 
         <div
-          className={`text-center text-[#404040] space-y-4 min-[801px]:pt-[15em] max-[801px]:pt-[1350px]`}
+          className={`text-center text-[#404040] space-y-4 min-[801px]:pt-[18em] max-[801px]:pt-[85em]`}
         >
           <p className={`text-4xl font-bold font-lora`}>What people say</p>
           <p className={`text-xs sm:text-base re`}>
@@ -175,11 +170,11 @@ export const Home = () => {
 
         <div>
           <div
-            className={`grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 place-items-center pt-10 mx-16`}
+            className={`grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 place-items-center pt-10 mx-[2em]`}
           >
-            <img className={``} src="../images/moses.png" alt="moses" />
+            <img className={`md:place-self-start`} src="../images/moses.png" alt="moses" />
             <img className={``} src="../images/sarah.png" alt="sarah" />
-            <img className={``} src="../images/emily.png" alt="emily" />
+            <img className={`md:place-self-end`} src="../images/emily.png" alt="emily" />
           </div>
           <img
             className={`pt-4 mx-auto hover:cursor-pointer`}
