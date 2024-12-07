@@ -12,21 +12,21 @@ export default function Map() {
   ];
 
   const customIcon = new Icon({
-    iconUrl:mapIcon,
+    iconUrl: mapIcon,
     iconSize: [38, 38],
   });
 
   return (
     <Container>
-      <MapContainer center={[51.513, -0.09]} zoom={13}>
+      <MapContainer center={[6.5904, 3.3423]} zoom={13}>
         <TileLayer
           attribution='&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
           maxZoom={19}
         />
-        {/* {markers.map((marker) => (
+        {markers.map((marker) => (
           <Marker position={marker.geocode} icon={customIcon}></Marker>
-        ))} */}
+        ))}
       </MapContainer>
     </Container>
   );

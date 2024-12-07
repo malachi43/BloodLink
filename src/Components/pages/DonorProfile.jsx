@@ -1,6 +1,3 @@
-import DonorSignupContainer from "../DonorSignupContainer";
-import SignUp from "./Signup";
-import DonorPic from "../DonorPic";
 import Donate from "../Donate";
 import UpcomingDonation from "../UpcomingDonation";
 import Appointment from "../Appointment";

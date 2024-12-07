@@ -1,80 +1,90 @@
 import styled from "styled-components";
 const stopwatch = "../../images/stopwatch.png";
+import { useMediaQuery } from "react-responsive";
+import DonorWayMobile from "./DonorWayMobile";
+import device from "../../device.js";
 
 export default function DonorOnTheirWay() {
+  const isMobile = useMediaQuery({
+    query: "(max-width: 768px)",
+  });
+
   return (
     <Contanier>
-      <TableWrapper>
-        <Table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Blood Type</th>
-              <th>Location</th>
-              <th>Arrival</th>
-              <th>Other Info</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>John Adeyemi</td>
-              <td>O+</td>
-              <td>Ikeja</td>
-              <td>20mins</td>
-              <td>View Info</td>
-            </tr>
-            <tr>
-              <td>Taiwo Israel</td>
-              <td>O-</td>
-              <td>Ogba</td>
-              <td>30mins</td>
-              <td>View Info</td>
-            </tr>
-            <tr>
-              <td>Owolawi Tola</td>
-              <td>O-</td>
-              <td>Ikeja</td>
-              <td>15mins</td>
-              <td>View Info</td>
-            </tr>
-          </tbody>
-        </Table>
-        <Socials>
-          <span>
-            <i class="fa-solid fa-phone"></i>
-          </span>
-          <span>
-            <i class="fa-solid fa-message"></i>
-          </span>
-          <span>
-            <i class="fa-brands fa-whatsapp"></i>
-          </span>
-        </Socials>
-      </TableWrapper>
-
+      {isMobile ? (
+        <DonorWayMobile />
+      ) : (
+        <TableWrapper>
+          <Table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Blood Type</th>
+                <th>Location</th>
+                <th>Arrival</th>
+                <th>Other Info</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Adeyemi</td>
+                <td>O+</td>
+                <td>Ikeja</td>
+                <td>20mins</td>
+                <td>View Info</td>
+              </tr>
+              <tr>
+                <td>Taiwo Israel</td>
+                <td>O-</td>
+                <td>Ogba</td>
+                <td>30mins</td>
+                <td>View Info</td>
+              </tr>
+              <tr>
+                <td>Owolawi Tola</td>
+                <td>O-</td>
+                <td>Ikeja</td>
+                <td>15mins</td>
+                <td>View Info</td>
+              </tr>
+            </tbody>
+          </Table>
+          <Socials>
+            <span>
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span>
+              <i class="fa-solid fa-message"></i>
+            </span>
+            <span>
+              <i class="fa-brands fa-whatsapp"></i>
+            </span>
+          </Socials>
+        </TableWrapper>
+      )}
       <OtherInfoContainer>
         <Col>
-          <Info>
-            <p>Other Information</p>
+          <Info id="other-heading" isMobile={isMobile}>
+            <p id="header-text">Other Information</p>
           </Info>
-          <Info>
+          <Info isMobile={isMobile}>
             <p>Donation Confirmation:</p>
             <p>Donor is on the way to the General Hospital, Gbagada</p>
           </Info>
-          <Info>
+          <Info isMobile={isMobile}>
             <p>Medical History:</p>
             <p>No prior health issues related to blood donation</p>
           </Info>
-          <Info>
+          <Info isMobile={isMobile}>
             <p>Donation Center Details:</p>
             <p>Gbagada General Hospital, Blood Bank Unit</p>
           </Info>
         </Col>
         <Col>
-          <Info>
+          <Info isMobile={isMobile}>
             <p>Total Requests</p>
           </Info>
-          <Info>
+          <Info isMobile={isMobile}>
             <Summary>
               <Success>
                 <p>65%</p>
@@ -86,7 +96,9 @@ export default function DonorOnTheirWay() {
               </NoSuccess>
             </Summary>
           </Info>
-          <EmergencyText>Emergency mode expires In</EmergencyText>
+          <EmergencyText isMobile={isMobile}>
+            Emergency mode expires In
+          </EmergencyText>
           <StopWatchWrapper>
             <Stopwatch src={stopwatch} alt="stopwatch" />
           </StopWatchWrapper>
@@ -107,13 +119,9 @@ const Contanier = styled.div`
 `;
 
 const TableWrapper = styled.div`
-  // display: flex;
   display: grid;
   grid-template-columns: 1fr;
-  // flex-direction: column;
   background-color: #ffffff;
-  // padding-block-end: 1em;
-  // flex: 1;
 `;
 const Table = styled.table`
   width: 100%;
@@ -169,18 +177,32 @@ const Socials = styled.div`
 `;
 
 const OtherInfoContainer = styled.div`
-  // display: flex;
   display: grid;
   grid-template-columns: 6fr 6fr;
   gap: 10px;
+  color: #404040;
   P {
     font-size: 0.7rem;
   }
-  @media (max-width: 768px) {
+
+  #other-heading {
+    margin-block-end: 1em;
+  }
+  #header-text {
+    border-radius: 5px;
+  }
+  @media ${device["mobile-device"]} {
     & {
       display: grid;
       grid-template-columns: 1fr;
-      // flex-direction: column;
+    }
+    p:first-child {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    p:nth-child(2) {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
   }
 `;
@@ -188,10 +210,8 @@ const Info = styled.div`
   display: flex;
   display: grid;
   grid-template-columns: 1fr;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: flex-start;
-  padding: 0.5em 1em;
+  padding: ${({ isMobile }) => (isMobile ? "" : "0.5em 1em")};
+  border-radius: 5px;
   p {
     text-align: center;
   }
@@ -205,12 +225,12 @@ const Info = styled.div`
   & p {
     text-align: start;
   }
-  @media (max-width: 768px) {
+  @media ${device["mobile-device"]} {
     & p {
       background-color: #f3e7e8;
       padding: 1em;
       width: 100%;
-      border-radius: none;
+      border-radius: 5px;
     }
   }
 `;
@@ -230,11 +250,14 @@ const Summary = styled.div`
   display: flex;
   gap: 1em;
 
-  @media (max-width: 768px) {
+  @media ${device["mobile-device"]} {
     & {
       gap: 0.2em;
       background-color: #f3e7e8;
       justify-content: space-between;
+      p {
+        text-align: center;
+      }
     }
   }
 `;
@@ -251,7 +274,7 @@ const Success = styled.div`
   padding: 1.5em;
   width: 45%;
 
-  @media (max-width: 768px) {
+  @media ${device["mobile-device"]} {
     & {
       padding: 1em;
       border-radius: 5px;
@@ -268,6 +291,12 @@ const EmergencyText = styled.p`
   color: #404040;
   font-size: 0.5rem;
   text-align: center;
+  background-color: ${({ isMobile }) => (isMobile ? "#F3E7E8" : "")};
+  margin-block-start: 1em;
+  border-radius: ${({isMobile})=> isMobile ? "5px" : ""};
+  padding: ${({isMobile})=> isMobile ? "1em" : ""};
+  text-align: ${({isMobile})=> isMobile ? "start": ""};
+  font-weight: 700;
 `;
 
 const Stopwatch = styled.img`
@@ -278,6 +307,7 @@ const Stopwatch = styled.img`
 const StopWatchWrapper = styled.div`
   width: 40px;
   height: 40px;
+  margin-block: 0.5em;
   margin: 0 auto;
 `;
 

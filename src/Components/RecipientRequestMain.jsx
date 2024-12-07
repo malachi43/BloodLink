@@ -4,6 +4,7 @@ import DonorStat from "./DonorStat";
 import RecentUpdate from "./RecentUpdate";
 import RequestTracker from "./RequestTracker";
 import DonationRequestHistory from "./DonationRequestHistory";
+import device from "../../device.js";
 
 export default function RecipientRequestMain() {
   return (
@@ -37,7 +38,7 @@ const Container = styled.div`
   grid-template-rows: auto;
   gap: 20px;
 
-  @media (max-width: 768px) {
+  @media ${device["mobile-device"]} {
     & {
       display: grid;
       grid-template-columns: auto;
