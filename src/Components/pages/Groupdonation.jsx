@@ -1,4 +1,3 @@
-import groupDonation from "../pages/group-donation.png";
 import "../Navbar.css"
 import { Link } from "react-router-dom";
 
@@ -7,7 +6,7 @@ export const Groupdonation = () => {
     <div>
       <div
         className={`w-[100%] h-[100vh] flex justify-center items-center bg-cover bg-center `}
-        style={{ backgroundImage: `url(${groupDonation})` }}
+        style={{ backgroundImage: `url(${"../images/group-donation.png"})` }}
       >
         <div className="text-center text-white space-y-4 mb-[8em]">
           <p className="text-4xl max-md:text-2xl font-lora">
